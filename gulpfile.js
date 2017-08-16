@@ -20,7 +20,7 @@ gulp.task('server', function() {
 gulp.task('scss', function() {
     gulp.src('assets/scss/*.scss')
         .pipe(scss())
-        .pipe(gulp.dest('assets.css'));
+        .pipe(gulp.dest('assets/css'));
 })
 
 // 默认任务

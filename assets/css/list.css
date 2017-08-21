@@ -473,8 +473,6 @@ ul {
 
 #section .floor {
   position: fixed;
-  /* top: 400px;
-left: 50px; */
   width: 50px;
 }
 
@@ -560,7 +558,7 @@ left: 50px; */
   text-align: center;
   margin-right: 5px;
   margin-bottom: 5px;
-  background-color: #34B3BB;
+  background-color: #34b3bb;
   color: #FFF;
 }
 
@@ -614,47 +612,7 @@ left: 50px; */
 }
 
 #section .list .part2 .xia {
-  position: relative;
-  width: 300px;
-  height: 198px;
-  background-color: #F2F2F2;
   margin-top: 2px;
-}
-
-#section .list .part2 .xia h2 {
-  width: 280px;
-  height: 44px;
-  line-height: 44px;
-  padding-left: 20px;
-  font-size: 18px;
-  font-weight: 800;
-  color: #555;
-}
-
-#section .list .part2 .xia span {
-  display: block;
-  color: #808080;
-  padding-left: 20px;
-  padding-bottom: 10px;
-  font-size: 14px;
-}
-
-#section .list .part2 .xia p {
-  line-height: 30px;
-  color: #FF0000;
-  font-size: 14px;
-  padding-left: 20px;
-}
-
-#section .list .part2 .xia img {
-  position: absolute;
-  bottom: 15px;
-  right: 20px;
-}
-
-#section .list .part2 .xia:hover img {
-  transform: translateX(-10px);
-  transition: all 1s ease;
 }
 
 #section .list .part3 {
@@ -700,6 +658,1080 @@ left: 50px; */
 }
 
 #section .list .part3 .wrap p {
+  line-height: 32px;
+  font-size: 16px;
+  color: #333;
+}
+
+#section .list1 {
+  position: relative;
+  width: 1190px;
+  height: 400px;
+  margin: 40px auto;
+  font-family: "Microsoft Yahei";
+  border-top: 2px solid #F3992E;
+}
+
+#section .list1 .part1 {
+  float: left;
+  width: 230px;
+  height: 400px;
+  background-color: #F3992E;
+}
+
+#section .list1 .part1 h3 {
+  font-size: 30px;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  overflow: hidden;
+  padding-top: 30px;
+  margin: 0 0 15px 20px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #fff;
+}
+
+#section .list1 .part1 p {
+  width: 194px;
+  font-size: 16px;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  padding: 10px 0;
+  color: #fff;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px dashed #fff;
+}
+
+#section .list1 .part1 .dianzan {
+  margin-top: 85px;
+  width: 194px;
+  height: 42px;
+}
+
+#section .list1 .part1 .dianzan img {
+  float: left;
+  margin-left: 20px;
+}
+
+#section .list1 .part1 .dianzan h4 {
+  float: left;
+  font-size: 14px;
+  height: 22px;
+  color: #FFF;
+}
+
+#section .list1 .part1 .lei {
+  width: 212px;
+  height: 96px;
+  margin: 10px 20px;
+}
+
+#section .list1 .part1 .lei li {
+  float: left;
+  width: 95px;
+  height: 27px;
+  line-height: 27px;
+  text-align: center;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  background-color: #e98610;
+  color: #FFF;
+}
+
+#section .list1 .part2 {
+  float: left;
+  width: 300px;
+  height: 398px;
+}
+
+#section .list1 .part2 .shang {
+  position: relative;
+  width: 300px;
+  height: 198px;
+  background-color: #F2F2F2;
+}
+
+#section .list1 .part2 .shang h2 {
+  width: 280px;
+  height: 44px;
+  line-height: 44px;
+  padding-left: 20px;
+  font-size: 18px;
+  font-weight: 800;
+  color: #555;
+}
+
+#section .list1 .part2 .shang span {
+  display: block;
+  color: #808080;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+
+#section .list1 .part2 .shang p {
+  line-height: 30px;
+  color: #FF0000;
+  font-size: 14px;
+  padding-left: 20px;
+}
+
+#section .list1 .part2 .shang img {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+}
+
+#section .list1 .part2 .shang:hover img {
+  transform: translateX(-10px);
+  transition: all 1s ease;
+}
+
+#section .list1 .part2 .xia {
+  margin-top: 2px;
+}
+
+#section .list1 .part3 {
+  position: relative;
+  float: left;
+  width: 360px;
+  height: 398px;
+  background-image: url(../images/ms.png);
+}
+
+#section .list1 .part3:hover img {
+  transform: translateX(-10px);
+  transition: all 1s linear;
+}
+
+#section .list1 .part3 img {
+  margin: 14px 15px;
+}
+
+#section .list1 .part3 .wrap {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  width: 360px;
+}
+
+#section .list1 .part3 .wrap h2 {
+  width: 330px;
+  height: 45px;
+  line-height: 45px;
+}
+
+#section .list1 .part3 .wrap h2 span {
+  background-color: #ed1f35;
+  font-size: 14px;
+  color: #FFF;
+}
+
+#section .list1 .part3 .wrap h1 {
+  font-size: 36px;
+  color: #333;
+  font-weight: 800;
+}
+
+#section .list1 .part3 .wrap p {
+  line-height: 32px;
+  font-size: 16px;
+  color: #333;
+}
+
+#section .list2 {
+  position: relative;
+  width: 1190px;
+  height: 400px;
+  margin: 40px auto;
+  font-family: "Microsoft Yahei";
+  border-top: 2px solid #7655E1;
+}
+
+#section .list2 .part1 {
+  float: left;
+  width: 230px;
+  height: 400px;
+  background-color: #7655E1;
+}
+
+#section .list2 .part1 h3 {
+  font-size: 30px;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  overflow: hidden;
+  padding-top: 30px;
+  margin: 0 0 15px 20px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #fff;
+}
+
+#section .list2 .part1 p {
+  width: 194px;
+  font-size: 16px;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  padding: 10px 0;
+  color: #fff;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px dashed #fff;
+}
+
+#section .list2 .part1 .dianzan {
+  margin-top: 85px;
+  width: 194px;
+  height: 42px;
+}
+
+#section .list2 .part1 .dianzan img {
+  float: left;
+  margin-left: 20px;
+}
+
+#section .list2 .part1 .dianzan h4 {
+  float: left;
+  font-size: 14px;
+  height: 22px;
+  color: #FFF;
+}
+
+#section .list2 .part1 .lei {
+  width: 212px;
+  height: 96px;
+  margin: 10px 20px;
+}
+
+#section .list2 .part1 .lei li {
+  float: left;
+  width: 95px;
+  height: 27px;
+  line-height: 27px;
+  text-align: center;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  background-color: #6b4bce;
+  color: #FFF;
+}
+
+#section .list2 .part2 {
+  float: left;
+  width: 300px;
+  height: 398px;
+}
+
+#section .list2 .part2 .shang {
+  position: relative;
+  width: 300px;
+  height: 198px;
+  background-color: #F2F2F2;
+}
+
+#section .list2 .part2 .shang h2 {
+  width: 280px;
+  height: 44px;
+  line-height: 44px;
+  padding-left: 20px;
+  font-size: 18px;
+  font-weight: 800;
+  color: #555;
+}
+
+#section .list2 .part2 .shang span {
+  display: block;
+  color: #808080;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+
+#section .list2 .part2 .shang p {
+  line-height: 30px;
+  color: #FF0000;
+  font-size: 14px;
+  padding-left: 20px;
+}
+
+#section .list2 .part2 .shang img {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+}
+
+#section .list2 .part2 .shang:hover img {
+  transform: translateX(-10px);
+  transition: all 1s ease;
+}
+
+#section .list2 .part2 .xia {
+  margin-top: 2px;
+}
+
+#section .list2 .part3 {
+  position: relative;
+  float: left;
+  width: 360px;
+  height: 398px;
+  background-image: url(../images/ms.png);
+}
+
+#section .list2 .part3:hover img {
+  transform: translateX(-10px);
+  transition: all 1s linear;
+}
+
+#section .list2 .part3 img {
+  margin: 14px 15px;
+}
+
+#section .list2 .part3 .wrap {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  width: 360px;
+}
+
+#section .list2 .part3 .wrap h2 {
+  width: 330px;
+  height: 45px;
+  line-height: 45px;
+}
+
+#section .list2 .part3 .wrap h2 span {
+  background-color: #ed1f35;
+  font-size: 14px;
+  color: #FFF;
+}
+
+#section .list2 .part3 .wrap h1 {
+  font-size: 36px;
+  color: #333;
+  font-weight: 800;
+}
+
+#section .list2 .part3 .wrap p {
+  line-height: 32px;
+  font-size: 16px;
+  color: #333;
+}
+
+#section .list3 {
+  position: relative;
+  width: 1190px;
+  height: 400px;
+  margin: 40px auto;
+  font-family: "Microsoft Yahei";
+  border-top: 2px solid #F3992E;
+}
+
+#section .list3 .part1 {
+  float: left;
+  width: 230px;
+  height: 400px;
+  background-color: #F3992E;
+}
+
+#section .list3 .part1 h3 {
+  font-size: 30px;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  overflow: hidden;
+  padding-top: 30px;
+  margin: 0 0 15px 20px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #fff;
+}
+
+#section .list3 .part1 p {
+  width: 194px;
+  font-size: 16px;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  padding: 10px 0;
+  color: #fff;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px dashed #fff;
+}
+
+#section .list3 .part1 .dianzan {
+  margin-top: 85px;
+  width: 194px;
+  height: 42px;
+}
+
+#section .list3 .part1 .dianzan img {
+  float: left;
+  margin-left: 20px;
+}
+
+#section .list3 .part1 .dianzan h4 {
+  float: left;
+  font-size: 14px;
+  height: 22px;
+  color: #FFF;
+}
+
+#section .list3 .part1 .lei {
+  width: 212px;
+  height: 96px;
+  margin: 10px 20px;
+}
+
+#section .list3 .part1 .lei li {
+  float: left;
+  width: 95px;
+  height: 27px;
+  line-height: 27px;
+  text-align: center;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  background-color: #e98610;
+  color: #FFF;
+}
+
+#section .list3 .part2 {
+  float: left;
+  width: 300px;
+  height: 398px;
+}
+
+#section .list3 .part2 .shang {
+  position: relative;
+  width: 300px;
+  height: 198px;
+  background-color: #F2F2F2;
+}
+
+#section .list3 .part2 .shang h2 {
+  width: 280px;
+  height: 44px;
+  line-height: 44px;
+  padding-left: 20px;
+  font-size: 18px;
+  font-weight: 800;
+  color: #555;
+}
+
+#section .list3 .part2 .shang span {
+  display: block;
+  color: #808080;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+
+#section .list3 .part2 .shang p {
+  line-height: 30px;
+  color: #FF0000;
+  font-size: 14px;
+  padding-left: 20px;
+}
+
+#section .list3 .part2 .shang img {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+}
+
+#section .list3 .part2 .shang:hover img {
+  transform: translateX(-10px);
+  transition: all 1s ease;
+}
+
+#section .list3 .part2 .xia {
+  margin-top: 2px;
+}
+
+#section .list3 .part3 {
+  position: relative;
+  float: left;
+  width: 360px;
+  height: 398px;
+  background-image: url(../images/ms.png);
+}
+
+#section .list3 .part3:hover img {
+  transform: translateX(-10px);
+  transition: all 1s linear;
+}
+
+#section .list3 .part3 img {
+  margin: 14px 15px;
+}
+
+#section .list3 .part3 .wrap {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  width: 360px;
+}
+
+#section .list3 .part3 .wrap h2 {
+  width: 330px;
+  height: 45px;
+  line-height: 45px;
+}
+
+#section .list3 .part3 .wrap h2 span {
+  background-color: #ed1f35;
+  font-size: 14px;
+  color: #FFF;
+}
+
+#section .list3 .part3 .wrap h1 {
+  font-size: 36px;
+  color: #333;
+  font-weight: 800;
+}
+
+#section .list3 .part3 .wrap p {
+  line-height: 32px;
+  font-size: 16px;
+  color: #333;
+}
+
+#section .list4 {
+  position: relative;
+  width: 1190px;
+  height: 400px;
+  margin: 40px auto;
+  font-family: "Microsoft Yahei";
+  border-top: 2px solid #5273DE;
+}
+
+#section .list4 .part1 {
+  float: left;
+  width: 230px;
+  height: 400px;
+  background-color: #5273DE;
+}
+
+#section .list4 .part1 h3 {
+  font-size: 30px;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  overflow: hidden;
+  padding-top: 30px;
+  margin: 0 0 15px 20px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #fff;
+}
+
+#section .list4 .part1 p {
+  width: 194px;
+  font-size: 16px;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  padding: 10px 0;
+  color: #fff;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px dashed #fff;
+}
+
+#section .list4 .part1 .dianzan {
+  margin-top: 85px;
+  width: 194px;
+  height: 42px;
+}
+
+#section .list4 .part1 .dianzan img {
+  float: left;
+  margin-left: 20px;
+}
+
+#section .list4 .part1 .dianzan h4 {
+  float: left;
+  font-size: 14px;
+  height: 22px;
+  color: #FFF;
+}
+
+#section .list4 .part1 .lei {
+  width: 212px;
+  height: 96px;
+  margin: 10px 20px;
+}
+
+#section .list4 .part1 .lei li {
+  float: left;
+  width: 95px;
+  height: 27px;
+  line-height: 27px;
+  text-align: center;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  background-color: #4460be;
+  color: #FFF;
+}
+
+#section .list4 .part2 {
+  float: left;
+  width: 300px;
+  height: 398px;
+}
+
+#section .list4 .part2 .shang {
+  position: relative;
+  width: 300px;
+  height: 198px;
+  background-color: #F2F2F2;
+}
+
+#section .list4 .part2 .shang h2 {
+  width: 280px;
+  height: 44px;
+  line-height: 44px;
+  padding-left: 20px;
+  font-size: 18px;
+  font-weight: 800;
+  color: #555;
+}
+
+#section .list4 .part2 .shang span {
+  display: block;
+  color: #808080;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+
+#section .list4 .part2 .shang p {
+  line-height: 30px;
+  color: #FF0000;
+  font-size: 14px;
+  padding-left: 20px;
+}
+
+#section .list4 .part2 .shang img {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+}
+
+#section .list4 .part2 .shang:hover img {
+  transform: translateX(-10px);
+  transition: all 1s ease;
+}
+
+#section .list4 .part2 .xia {
+  margin-top: 2px;
+}
+
+#section .list4 .part3 {
+  position: relative;
+  float: left;
+  width: 360px;
+  height: 398px;
+  background-image: url(../images/ms.png);
+}
+
+#section .list4 .part3:hover img {
+  transform: translateX(-10px);
+  transition: all 1s linear;
+}
+
+#section .list4 .part3 img {
+  margin: 14px 15px;
+}
+
+#section .list4 .part3 .wrap {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  width: 360px;
+}
+
+#section .list4 .part3 .wrap h2 {
+  width: 330px;
+  height: 45px;
+  line-height: 45px;
+}
+
+#section .list4 .part3 .wrap h2 span {
+  background-color: #ed1f35;
+  font-size: 14px;
+  color: #FFF;
+}
+
+#section .list4 .part3 .wrap h1 {
+  font-size: 36px;
+  color: #333;
+  font-weight: 800;
+}
+
+#section .list4 .part3 .wrap p {
+  line-height: 32px;
+  font-size: 16px;
+  color: #333;
+}
+
+#section .list5 {
+  position: relative;
+  width: 1190px;
+  height: 400px;
+  margin: 40px auto;
+  font-family: "Microsoft Yahei";
+  border-top: 2px solid #7655E1;
+}
+
+#section .list5 .part1 {
+  float: left;
+  width: 230px;
+  height: 400px;
+  background-color: #7655E1;
+}
+
+#section .list5 .part1 h3 {
+  font-size: 30px;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  overflow: hidden;
+  padding-top: 30px;
+  margin: 0 0 15px 20px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #fff;
+}
+
+#section .list5 .part1 p {
+  width: 194px;
+  font-size: 16px;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  padding: 10px 0;
+  color: #fff;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px dashed #fff;
+}
+
+#section .list5 .part1 .dianzan {
+  margin-top: 85px;
+  width: 194px;
+  height: 42px;
+}
+
+#section .list5 .part1 .dianzan img {
+  float: left;
+  margin-left: 20px;
+}
+
+#section .list5 .part1 .dianzan h4 {
+  float: left;
+  font-size: 14px;
+  height: 22px;
+  color: #FFF;
+}
+
+#section .list5 .part1 .lei {
+  width: 212px;
+  height: 96px;
+  margin: 10px 20px;
+}
+
+#section .list5 .part1 .lei li {
+  float: left;
+  width: 95px;
+  height: 27px;
+  line-height: 27px;
+  text-align: center;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  background-color: #6b4bce;
+  color: #FFF;
+}
+
+#section .list5 .part2 {
+  float: left;
+  width: 300px;
+  height: 398px;
+}
+
+#section .list5 .part2 .shang {
+  position: relative;
+  width: 300px;
+  height: 198px;
+  background-color: #F2F2F2;
+}
+
+#section .list5 .part2 .shang h2 {
+  width: 280px;
+  height: 44px;
+  line-height: 44px;
+  padding-left: 20px;
+  font-size: 18px;
+  font-weight: 800;
+  color: #555;
+}
+
+#section .list5 .part2 .shang span {
+  display: block;
+  color: #808080;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+
+#section .list5 .part2 .shang p {
+  line-height: 30px;
+  color: #FF0000;
+  font-size: 14px;
+  padding-left: 20px;
+}
+
+#section .list5 .part2 .shang img {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+}
+
+#section .list5 .part2 .shang:hover img {
+  transform: translateX(-10px);
+  transition: all 1s ease;
+}
+
+#section .list5 .part2 .xia {
+  margin-top: 2px;
+}
+
+#section .list5 .part3 {
+  position: relative;
+  float: left;
+  width: 360px;
+  height: 398px;
+  background-image: url(../images/ms.png);
+}
+
+#section .list5 .part3:hover img {
+  transform: translateX(-10px);
+  transition: all 1s linear;
+}
+
+#section .list5 .part3 img {
+  margin: 14px 15px;
+}
+
+#section .list5 .part3 .wrap {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  width: 360px;
+}
+
+#section .list5 .part3 .wrap h2 {
+  width: 330px;
+  height: 45px;
+  line-height: 45px;
+}
+
+#section .list5 .part3 .wrap h2 span {
+  background-color: #ed1f35;
+  font-size: 14px;
+  color: #FFF;
+}
+
+#section .list5 .part3 .wrap h1 {
+  font-size: 36px;
+  color: #333;
+  font-weight: 800;
+}
+
+#section .list5 .part3 .wrap p {
+  line-height: 32px;
+  font-size: 16px;
+  color: #333;
+}
+
+#section .list6 {
+  position: relative;
+  width: 1190px;
+  height: 400px;
+  margin: 40px auto;
+  font-family: "Microsoft Yahei";
+  border-top: 2px solid #F3992E;
+}
+
+#section .list6 .part1 {
+  float: left;
+  width: 230px;
+  height: 400px;
+  background-color: #F3992E;
+}
+
+#section .list6 .part1 h3 {
+  font-size: 30px;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  overflow: hidden;
+  padding-top: 30px;
+  margin: 0 0 15px 20px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #fff;
+}
+
+#section .list6 .part1 p {
+  width: 194px;
+  font-size: 16px;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  padding: 10px 0;
+  color: #fff;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px dashed #fff;
+}
+
+#section .list6 .part1 .dianzan {
+  margin-top: 85px;
+  width: 194px;
+  height: 42px;
+}
+
+#section .list6 .part1 .dianzan img {
+  float: left;
+  margin-left: 20px;
+}
+
+#section .list6 .part1 .dianzan h4 {
+  float: left;
+  font-size: 14px;
+  height: 22px;
+  color: #FFF;
+}
+
+#section .list6 .part1 .lei {
+  width: 212px;
+  height: 96px;
+  margin: 10px 20px;
+}
+
+#section .list6 .part1 .lei li {
+  float: left;
+  width: 95px;
+  height: 27px;
+  line-height: 27px;
+  text-align: center;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  background-color: #e98610;
+  color: #FFF;
+}
+
+#section .list6 .part2 {
+  float: left;
+  width: 300px;
+  height: 398px;
+}
+
+#section .list6 .part2 .shang {
+  position: relative;
+  width: 300px;
+  height: 198px;
+  background-color: #F2F2F2;
+}
+
+#section .list6 .part2 .shang h2 {
+  width: 280px;
+  height: 44px;
+  line-height: 44px;
+  padding-left: 20px;
+  font-size: 18px;
+  font-weight: 800;
+  color: #555;
+}
+
+#section .list6 .part2 .shang span {
+  display: block;
+  color: #808080;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+
+#section .list6 .part2 .shang p {
+  line-height: 30px;
+  color: #FF0000;
+  font-size: 14px;
+  padding-left: 20px;
+}
+
+#section .list6 .part2 .shang img {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+}
+
+#section .list6 .part2 .shang:hover img {
+  transform: translateX(-10px);
+  transition: all 1s ease;
+}
+
+#section .list6 .part2 .xia {
+  margin-top: 2px;
+}
+
+#section .list6 .part3 {
+  position: relative;
+  float: left;
+  width: 360px;
+  height: 398px;
+  background-image: url(../images/ms.png);
+}
+
+#section .list6 .part3:hover img {
+  transform: translateX(-10px);
+  transition: all 1s linear;
+}
+
+#section .list6 .part3 img {
+  margin: 14px 15px;
+}
+
+#section .list6 .part3 .wrap {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  width: 360px;
+}
+
+#section .list6 .part3 .wrap h2 {
+  width: 330px;
+  height: 45px;
+  line-height: 45px;
+}
+
+#section .list6 .part3 .wrap h2 span {
+  background-color: #ed1f35;
+  font-size: 14px;
+  color: #FFF;
+}
+
+#section .list6 .part3 .wrap h1 {
+  font-size: 36px;
+  color: #333;
+  font-weight: 800;
+}
+
+#section .list6 .part3 .wrap p {
   line-height: 32px;
   font-size: 16px;
   color: #333;

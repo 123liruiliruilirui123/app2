@@ -329,18 +329,18 @@ ul {
     }
 }
 
-@mixin floor {
+@mixin floor($border, $bgcolor) {
     position: relative;
     width: 1190px;
     height: 400px;
     margin: 40px auto;
     font-family: "Microsoft Yahei";
-    border-top: 2px solid #29b9c2;
+    border-top: 2px solid $border;
     .part1 {
         float: left;
         width: 230px;
         height: 400px;
-        background-color: #29b9c2;
+        background-color: $border;
         h3 {
             font-size: 30px;
             width: 100%;
@@ -393,46 +393,9 @@ ul {
                 text-align: center;
                 margin-right: 5px;
                 margin-bottom: 5px;
-                background-color: #34B3BB;
+                background-color: $bgcolor;
                 color: #FFF;
             }
-        }
-    }
-    @mixin zong {
-        position: relative;
-        width: 300px;
-        height: 198px;
-        background-color: #F2F2F2;
-        h2 {
-            width: 280px;
-            height: 44px;
-            line-height: 44px;
-            padding-left: 20px;
-            font-size: 18px;
-            font-weight: 800;
-            color: #555;
-        }
-        span {
-            display: block;
-            color: #808080;
-            padding-left: 20px;
-            padding-bottom: 10px;
-            font-size: 14px;
-        }
-        p {
-            line-height: 30px;
-            color: #FF0000;
-            font-size: 14px;
-            padding-left: 20px;
-        }
-        img {
-            position: absolute;
-            bottom: 15px;
-            right: 20px;
-        }
-        &:hover img {
-            transform: translateX(-10px);
-            transition: all 1s ease;
         }
     }
     .part2 {
@@ -440,10 +403,43 @@ ul {
         width: 300px;
         height: 398px;
         .shang {
-            @include zong;
+            position: relative;
+            width: 300px;
+            height: 198px;
+            background-color: #F2F2F2;
+            h2 {
+                width: 280px;
+                height: 44px;
+                line-height: 44px;
+                padding-left: 20px;
+                font-size: 18px;
+                font-weight: 800;
+                color: #555;
+            }
+            span {
+                display: block;
+                color: #808080;
+                padding-left: 20px;
+                padding-bottom: 10px;
+                font-size: 14px;
+            }
+            p {
+                line-height: 30px;
+                color: #FF0000;
+                font-size: 14px;
+                padding-left: 20px;
+            }
+            img {
+                position: absolute;
+                bottom: 15px;
+                right: 20px;
+            }
+            &:hover img {
+                transform: translateX(-10px);
+                transition: all 1s ease;
+            }
         }
         .xia {
-            @include zong;
             margin-top: 2px;
         }
     }
@@ -575,8 +571,6 @@ ul {
     }
     .floor {
         position: fixed;
-        /* top: 400px;
-left: 50px; */
         width: 50px;
         li {
             height: 38px;
@@ -588,6 +582,24 @@ left: 50px; */
     }
 
     .list {
-        @include floor;
+        @include floor(#29b9c2, #34b3bb);
+    }
+    .list1 {
+        @include floor(#F3992E, #e98610);
+    }
+    .list2 {
+        @include floor(#7655E1, #6b4bce);
+    }
+    .list3 {
+        @include floor(#F3992E, #e98610);
+    }
+    .list4 {
+        @include floor(#5273DE, #4460be);
+    }
+    .list5 {
+        @include floor(#7655E1, #6b4bce);
+    }
+    .list6 {
+        @include floor(#F3992E, #e98610);
     }
 }

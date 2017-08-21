@@ -112,6 +112,11 @@ ul {
   float: left;
 }
 
+#header .header-main .lunbowrap .header-main-left .main-wrap ul li:hover {
+  transform: scale(1.1, 1.1);
+  transition: all 0.5s ease;
+}
+
 #header .header-main .lunbowrap .header-main-left .xuhao {
   position: absolute;
   bottom: 10px;
@@ -130,7 +135,7 @@ ul {
   width: 366px;
   height: 300px;
   margin-top: 58px;
-  margin-left: 30px;
+  margin-left: 60px;
 }
 
 #header .header-main .lunbowrap .header-main-right h1 {
@@ -455,6 +460,31 @@ ul {
   margin: 0 auto;
 }
 
+#section .section-jianzhan .img-hover {
+  position: relative;
+  width: 354px;
+  height: 224px;
+  overflow: hidden;
+}
+
+#section .section-jianzhan .img-hover .drop {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 354px;
+  height: 224px;
+  text-align: center;
+  line-height: 224px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#section .section-jianzhan .img-hover .drop a {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  font-weight: 800;
+}
+
 #section .section-jianzhan li {
   width: 354px;
   margin-left: 34px;
@@ -490,6 +520,15 @@ ul {
 
 #section .section-jianzhan li:hover .spanone {
   color: #377fed;
+}
+
+#section .section-jianzhan li:hover img {
+  transform: scale(1.1, 1.1);
+  transition: all 0.5s ease;
+}
+
+#section .section-jianzhan li:hover .drop {
+  display: block;
 }
 
 #section .section-widget {
@@ -1612,6 +1651,10 @@ ul {
   font-size: 18px;
 }
 
+#section .section-wenti .one dt:nth-child(2) {
+  display: none;
+}
+
 #section .section-wenti .one dt:nth-child(2) p {
   width: 936px;
   line-height: 30px;
@@ -1648,6 +1691,10 @@ ul {
 #section .section-wenti .two dt:first-child span:nth-child(2) .iconfont {
   color: #999;
   font-size: 18px;
+}
+
+#section .section-wenti .two dt:nth-child(2) {
+  display: none;
 }
 
 #section .section-wenti .two dt:nth-child(2) p {
@@ -1688,6 +1735,10 @@ ul {
   font-size: 18px;
 }
 
+#section .section-wenti .three dt:nth-child(2) {
+  display: none;
+}
+
 #section .section-wenti .three dt:nth-child(2) p {
   width: 936px;
   line-height: 30px;
@@ -1726,6 +1777,10 @@ ul {
   font-size: 18px;
 }
 
+#section .section-wenti .four dt:nth-child(2) {
+  display: none;
+}
+
 #section .section-wenti .four dt:nth-child(2) p {
   width: 936px;
   line-height: 30px;
@@ -1762,6 +1817,10 @@ ul {
 #section .section-wenti .five dt:first-child span:nth-child(2) .iconfont {
   color: #999;
   font-size: 18px;
+}
+
+#section .section-wenti .five dt:nth-child(2) {
+  display: none;
 }
 
 #section .section-wenti .five dt:nth-child(2) p {
@@ -2096,4 +2155,10 @@ ul {
   color: #8a8a8a;
   font-family: "Microsoft YaHei";
   font-size: 14px;
+  padding-bottom: 1px;
+}
+
+#footer .wrap .footer-right li a:hover {
+  color: #eb6b25;
+  border-bottom: 1px solid #eb6b25;
 }

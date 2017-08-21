@@ -330,11 +330,15 @@
                              .main-wrap {
                                  overflow: hidden;
                                  width: 469px;
-                                 height: 283px;
+                                 height: 283px; //第一个轮播图，放大
                                  ul {
                                      width: 9999px;
                                      li {
                                          float: left;
+                                         &:hover {
+                                             transform: scale(1.1, 1.1);
+                                             transition: (all 0.5s ease);
+                                         }
                                      }
                                  }
                              }
@@ -356,7 +360,7 @@
                              width: 366px;
                              height: 300px;
                              margin-top: 58px;
-                             margin-left: 30px;
+                             margin-left: 60px;
                              h1 {
                                  text-align: center;
                                  line-height: 56px;
@@ -461,11 +465,34 @@
                      width: 1200px;
                      height: 596px;
                      margin: 0 auto;
+                     .img-hover {
+                         position: relative;
+                         width: 354px;
+                         height: 224px;
+                         overflow: hidden;
+                         .drop {
+                             display: none;
+                             position: absolute;
+                             top: 0;
+                             left: 0;
+                             width: 354px;
+                             height: 224px;
+                             text-align: center;
+                             line-height: 224px;
+                             background-color: rgba(0, 0, 0, .5);
+                             a {
+                                 color: rgba(255, 255, 255, .7);
+                                 font-size: 16px;
+                                 font-weight: 800;
+                             }
+                         }
+                     }
                      li {
                          width: 354px;
                          margin-left: 34px;
                          margin-bottom: 34px;
                          float: left;
+
                          h3 {
                              width: 354px;
                              height: 45px;
@@ -491,6 +518,13 @@
                          }
                          &:hover .spanone {
                              color: #377fed;
+                         }
+                         &:hover img {
+                             transform: scale(1.1, 1.1);
+                             transition: (all 0.5s ease);
+                         }
+                         &:hover .drop {
+                             display: block;
                          }
                      }
                  }
@@ -1361,6 +1395,7 @@
                              }
                          }
                          dt:nth-child(2) {
+                             display: none;
                              p {
                                  @include dianji;
                              }
@@ -1484,6 +1519,11 @@
                                  color: #8a8a8a;
                                  font-family: "Microsoft YaHei";
                                  font-size: 14px;
+                                 padding-bottom: 1px;
+                                 &:hover {
+                                     color: #eb6b25;
+                                     border-bottom: 1px solid #eb6b25;
+                                 }
                              }
                          }
                      }

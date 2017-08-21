@@ -1,0 +1,331 @@
+#container {
+  width: 100%;
+  min-height: 500px;
+  margin: 0 auto;
+  font-family: 'microsoft yahei';
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+#header {
+  width: 1100px;
+  height: 115px;
+  margin: 0 auto;
+  line-height: 115px;
+}
+
+#header .logo {
+  display: inline-block;
+  width: 127px;
+  height: 66px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 26px;
+}
+
+#header h1 {
+  display: inline-block;
+  vertical-align: middle;
+  width: 104px;
+  height: 64px;
+  padding-left: 25px;
+  line-height: 64px;
+  border-left: 1px solid #888;
+  font-size: 26px;
+  font-weight: 400;
+  color: #888;
+}
+
+#header .logo1 {
+  display: inline-block;
+  float: right;
+  width: 138px;
+  height: 40px;
+  font-size: 12px;
+  color: #555;
+  font-family: 'microsoft yahei';
+  vertical-align: bottom;
+  margin-top: 75px;
+  padding-right: 85px;
+  line-height: 40px;
+}
+
+#header .logo1 img {
+  vertical-align: middle;
+}
+
+#header .logo1 span {
+  display: inline-block;
+}
+
+#section {
+  position: relative;
+  width: 100%;
+  height: 516.5px;
+  background-image: url(../images/bj.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 33.5px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #333;
+}
+
+#section .form {
+  position: relative;
+  width: 330px;
+  height: 417px;
+  overflow: hidden;
+  float: right;
+  margin-right: 240px;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  z-index: 10;
+  opacity: .95;
+}
+
+#section .form .login-header {
+  position: relative;
+  width: 277px;
+  height: 65px;
+  line-height: 65px;
+  margin: 0 auto;
+  border-bottom: 1px solid #e7e7e7;
+  color: #333;
+}
+
+#section .form .login-header img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#section .form .login-header p {
+  float: left;
+  width: 123px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "microsoft yahei";
+  letter-spacing: 1px;
+}
+
+#section .form .login-header p:first-child {
+  margin-left: 20px;
+  border-bottom: 2px solid #f60;
+  padding: 0 2px;
+}
+
+#section .form .login-header p:nth-child(2) {
+  color: #9f9f9f;
+}
+
+#section .form .login-name {
+  margin: 0 auto;
+  width: 275px;
+  height: 36px;
+  margin-top: 36px;
+  border: solid 1px #ccc;
+  height: 36px;
+  border-radius: 2px;
+}
+
+#section .form .login-name img {
+  float: left;
+}
+
+#section .form .login-name input {
+  margin-top: 10px;
+  float: left;
+  font-family: "microsoft yahei";
+  padding-left: 10px;
+  border: 0;
+  outline: 0;
+}
+
+#section .form .login-pass {
+  margin: 0 auto;
+  width: 275px;
+  height: 36px;
+  margin-top: 36px;
+  border: solid 1px #ccc;
+  height: 36px;
+  border-radius: 2px;
+  margin-top: 22px;
+}
+
+#section .form .login-pass img {
+  float: left;
+}
+
+#section .form .login-pass input {
+  margin-top: 10px;
+  float: left;
+  font-family: "microsoft yahei";
+  padding-left: 10px;
+  border: 0;
+  outline: 0;
+}
+
+#section .form .login-xuan {
+  width: 277px;
+  height: 19px;
+  margin: 0 auto;
+  margin-top: 34px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #333;
+}
+
+#section .form .login-xuan input {
+  float: left;
+}
+
+#section .form .login-xuan a {
+  margin-top: 1px;
+  font-size: 12px;
+  float: right;
+  color: #333;
+}
+
+#section .form .login-xuan a:hover {
+  color: #ff9400;
+  text-decoration: underline;
+}
+
+#section .form .login-submit {
+  width: 277px;
+  height: 38px;
+  box-shadow: 0 1px 5px -1px #f60;
+  font-family: microsoft yahei;
+  font-weight: 700;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  font-size: 16px;
+  color: #fff;
+  margin: 20px auto;
+  margin-left: 25px;
+  background-color: #cc7600;
+  border: 0;
+  outline: 0;
+}
+
+#section .form .login-footer {
+  padding: 20px 26px 0;
+  width: 278px;
+  height: 65px;
+  margin: 0;
+  border-top: dashed 1px #ebebeb;
+  background-color: #f3f3f3;
+  opacity: .95;
+  position: relative;
+}
+
+#section .form .login-footer span {
+  color: #999;
+  line-height: 12px;
+  font-size: 12px;
+}
+
+#section .form .login-footer ul {
+  width: 278px;
+  height: 40px;
+  line-height: 40px;
+}
+
+#section .form .login-footer ul li {
+  height: 40px;
+  float: left;
+  margin-right: 15px;
+  color: #333;
+}
+
+#section .form .login-footer ul li .icon-weibo1 {
+  font-size: 25px;
+  color: #D45F60;
+}
+
+#section .form .login-footer ul li .icon-QQ {
+  color: #65b5d1;
+  font-size: 25px;
+}
+
+#section .form .login-footer ul li .icon-weixin1 {
+  color: #5CCE63;
+  font-size: 25px;
+}
+
+#section .form .login-footer ul li:nth-child(4) {
+  float: right;
+}
+
+#section .form .login-footer ul li:nth-child(4) a {
+  color: #f60;
+}
+
+#section .form .login-footer ul li:nth-child(4) a:hover {
+  text-decoration: underline;
+}
+
+#footer {
+  width: 100%;
+  height: 126px;
+  background: #fff;
+  padding-top: 46px;
+  padding-bottom: 53px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #333;
+}
+
+#footer ul {
+  width: 1100px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer ul li {
+  display: inline;
+  float: left;
+}
+
+#footer ul li a {
+  padding: 0 5px;
+  border-right: 1px solid #eee;
+  color: #666;
+  font-size: 12px;
+}
+
+#footer p {
+  margin-bottom: 10px;
+  color: #999;
+  text-align: center;
+}
+
+#footer .tubiao {
+  overflow: hidden;
+  width: 1100px;
+  height: 48px;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer .tubiao img {
+  float: left;
+  margin: 0 10px;
+}

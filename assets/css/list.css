@@ -1,0 +1,706 @@
+#container {
+  width: 100%;
+  min-height: 2000px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+#header {
+  width: 100%;
+}
+
+#header .header-top {
+  width: 100%;
+  background: #f8f8f8;
+  border-bottom: 1px solid #e7e7e7;
+  height: 33px;
+  font-size: 12px;
+  color: #555;
+  line-height: 32px;
+  font-family: simsun, serif;
+}
+
+#header .header-top .top-center {
+  width: 1190px;
+  height: 33px;
+  margin: 0 auto;
+}
+
+#header .header-top .top-center .center-left {
+  width: 221px;
+  height: 32px;
+  float: left;
+}
+
+#header .header-top .top-center .center-left .saoma {
+  float: left;
+  width: 105px;
+  height: 32px;
+}
+
+#header .header-top .top-center .center-left .saoma img {
+  vertical-align: middle;
+}
+
+#header .header-top .top-center .center-left .saoma span {
+  display: inline-block;
+  font-size: 12px;
+  color: #555;
+}
+
+#header .header-top .top-center .center-left a {
+  float: left;
+  margin-left: 5px;
+  font-size: 12px;
+  color: #555;
+}
+
+#header .header-top .top-center .center-left a:hover {
+  color: #f60;
+  text-decoration: underline;
+}
+
+#header .header-top .top-center .center-right {
+  width: 566px;
+  height: 32px;
+  line-height: 32px;
+  float: right;
+}
+
+#header .header-top .top-center .center-right li {
+  line-height: 32px;
+  float: left;
+  margin-left: 10px;
+}
+
+#header .header-top .top-center .center-right li a {
+  color: #555;
+  font-size: 12px;
+  padding-left: 5px;
+}
+
+#header .header-top .top-center .center-right li .iconfont {
+  color: #555;
+  font-size: 12px;
+}
+
+#header .header-top .top-center .center-right li .icon-daohangshouye2 {
+  color: #d9534f;
+}
+
+#header .header-top .top-center .center-right .dd {
+  position: relative;
+}
+
+#header .header-top .top-center .center-right .dd:hover {
+  background-color: #fff;
+}
+
+#header .header-top .top-center .center-right .dd ul {
+  position: absolute;
+  top: 32px;
+  left: -5px;
+  width: 70px;
+  z-index: 99;
+  box-shadow: 2px 2px #ddd;
+}
+
+#header .header-top .top-center .center-right .dd ul li {
+  width: 70px;
+  height: 30px;
+}
+
+#header .header-top .top-center .center-right .dd ul li:hover {
+  background-color: #ddd;
+}
+
+#header .header-center {
+  width: 100%;
+  height: 117px;
+  font-family: "Microsoft YaHei";
+}
+
+#header .header-center .center {
+  position: relative;
+  width: 1190px;
+  height: 77px;
+  margin: 15px auto;
+  padding: 20px 0 10px;
+  color: #333;
+}
+
+#header .header-center .center img {
+  float: left;
+  margin-right: 30px;
+}
+
+#header .header-center .center .city {
+  float: left;
+  width: 127px;
+  height: 64px;
+}
+
+#header .header-center .center .city p {
+  margin-top: 16px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #ff9400;
+}
+
+#header .header-center .center .city p i {
+  margin-left: 15px;
+}
+
+#header .header-center .center .city span {
+  color: #bbb;
+  font-size: 12px;
+}
+
+#header .header-center .center .jiejue {
+  float: left;
+  height: 30px;
+  margin-top: 20px;
+  padding: 0 0 0 14px;
+  border-left: 1px solid #e5e5e5;
+  color: #7d7d7d;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Microsoft YaHei";
+}
+
+#header .header-center .center .inp {
+  float: left;
+  position: relative;
+  width: 522px;
+  margin-left: 100px;
+}
+
+#header .header-center .center .inp .fuwu {
+  position: absolute;
+  top: 3px;
+  width: 67px;
+  height: 19px;
+  padding: 10px 0 10px 20px;
+  color: #555;
+  font-size: 12px;
+  line-height: 19px;
+}
+
+#header .header-center .center .inp .fuwu i {
+  padding-left: 5px;
+}
+
+#header .header-center .center .inp .shu {
+  font-size: 14px;
+  width: 360px;
+  height: 20px;
+  line-height: 20px;
+  padding: 10px 6px 9px 90px;
+  vertical-align: top;
+  outline: 0;
+  border: 3px solid #ff9400;
+}
+
+#header .header-center .center .inp .sousuo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 63px;
+  height: 45px;
+  background: #f60;
+  font-size: 16px;
+  font-weight: 700;
+  padding-left: 12px;
+  padding-right: 12px;
+  text-align: center;
+  color: #fff;
+  outline: 0;
+  border: 0;
+}
+
+#header .header-center .center .inp .serch {
+  width: 522px;
+  height: 24px;
+  margin-top: 5px;
+}
+
+#header .header-center .center .inp .serch span {
+  color: #333;
+  font-size: 12px;
+}
+
+#header .header-center .center .inp .serch a {
+  display: inline-block;
+  font-size: 12px;
+  color: #ff9400;
+  margin-right: 13px;
+  font-family: "Helvetica Neue";
+}
+
+#header .header-center .center .or {
+  display: inline-block;
+  font-size: 12px;
+  color: #333;
+}
+
+#header .header-center .center .send {
+  position: relative;
+  background: #f60;
+  margin-left: 10px;
+  font-size: 14px;
+  padding: 0 8px 0 0;
+  height: 45px;
+  font-size: 16px;
+  font-weight: 700;
+  padding-left: 12px;
+  padding-right: 12px;
+  text-align: center;
+  color: #fff;
+  outline: 0;
+  border: 0;
+}
+
+#header .header-bottom {
+  position: relative;
+  width: 100%;
+  height: 41px;
+  margin: 0 auto;
+  border-bottom: 1px solid #ff6900;
+  font-family: microsoft yahei;
+}
+
+#header .header-bottom .wrap {
+  width: 1190px;
+  height: 41px;
+  line-height: 41px;
+  margin: 0 auto;
+}
+
+#header .header-bottom .wrap .liebiao {
+  float: left;
+  width: 56px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 5px;
+  border-radius: 20px;
+}
+
+#header .header-bottom .wrap .liebiao i {
+  color: #f60;
+  font-size: 20px;
+  font-weight: 1000;
+}
+
+#header .header-bottom .wrap .liebiao:hover {
+  background-color: #ff6900;
+}
+
+#header .header-bottom .wrap .liebiao:hover i {
+  color: #FFF;
+}
+
+#header .header-bottom .wrap span {
+  float: left;
+  width: 62px;
+  height: 28px;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 28px;
+  font-size: 16px;
+  color: #ff6900;
+  margin-top: 5px;
+  font-family: microsoft yahei;
+}
+
+#header .header-bottom .wrap span:hover {
+  background-color: #ff6900;
+  color: #FFF;
+}
+
+#header .header-bottom .wrap .lb-left {
+  float: left;
+  height: 40px;
+  line-height: 40px;
+}
+
+#header .header-bottom .wrap .lb-left li {
+  float: left;
+  height: 28px;
+  width: 94px;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 28px;
+  font-size: 16px;
+  color: #ff6900;
+  margin-top: 5px;
+  font-family: microsoft yahei;
+}
+
+#header .header-bottom .wrap .lb-left li:hover {
+  background-color: #ff6900;
+  color: #FFF;
+}
+
+#header .header-bottom .wrap .lb-left .zh {
+  color: #fff;
+  border-radius: 20px;
+  background-color: #ff6900;
+}
+
+#header .header-bottom .wrap .lb-right {
+  float: right;
+  width: 570px;
+  height: 40px;
+}
+
+#header .header-bottom .wrap .lb-right li {
+  float: left;
+  height: 28px;
+  width: 94px;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 28px;
+  font-size: 16px;
+  color: #666;
+  margin-top: 5px;
+  font-family: microsoft yahei;
+}
+
+#section {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#section .lunbo {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+}
+
+#section .lunbo .lunbo-body {
+  width: 99999px;
+}
+
+#section .lunbo .lunbo-body li {
+  float: left;
+}
+
+#section .lunbo .lunbo-index {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+}
+
+#section .lunbo .lunbo-index li {
+  float: left;
+  width: 15px;
+  height: 15px;
+  margin-right: 20px;
+  border-radius: 47%;
+  border: 1px solid #FFF;
+}
+
+#section .remen {
+  margin: 0 auto;
+  width: 1190px;
+  height: 200px;
+}
+
+#section .remen p {
+  float: left;
+  position: relative;
+  display: inline-block;
+  width: 230px;
+  height: 165px;
+  margin-top: 30px;
+}
+
+#section .remen p span {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  display: inline-block;
+  width: 80px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  font-family: "Microsoft Yahei";
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+#section .remen div {
+  float: left;
+  width: 140px;
+  height: 125px;
+  font-size: 14px;
+  color: #555;
+  margin-top: 40px;
+  margin-left: 15px;
+}
+
+#section .remen div img {
+  margin: 30px 0 10px 45px;
+}
+
+#section .remen div:hover {
+  background-color: #eee;
+  color: #ff6700;
+}
+
+#section .remen div:hover img {
+  transform: scale(1.1, 1.1);
+  transition: all 0.5s linear;
+}
+
+#section .remen div span {
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  margin-left: 40px;
+  font-family: "Microsoft Yahei";
+}
+
+#section .floor {
+  position: fixed;
+  /* top: 400px;
+left: 50px; */
+  width: 50px;
+}
+
+#section .floor li {
+  height: 38px;
+  line-height: 38px;
+  color: #333;
+  font-size: 12px;
+  border-bottom: 1px solid #666;
+}
+
+#section .list {
+  position: relative;
+  width: 1190px;
+  height: 400px;
+  margin: 40px auto;
+  font-family: "Microsoft Yahei";
+  border-top: 2px solid #29b9c2;
+}
+
+#section .list .part1 {
+  float: left;
+  width: 230px;
+  height: 400px;
+  background-color: #29b9c2;
+}
+
+#section .list .part1 h3 {
+  font-size: 30px;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  overflow: hidden;
+  padding-top: 30px;
+  margin: 0 0 15px 20px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #fff;
+}
+
+#section .list .part1 p {
+  width: 194px;
+  font-size: 16px;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  padding: 10px 0;
+  color: #fff;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px dashed #fff;
+}
+
+#section .list .part1 .dianzan {
+  margin-top: 85px;
+  width: 194px;
+  height: 42px;
+}
+
+#section .list .part1 .dianzan img {
+  float: left;
+  margin-left: 20px;
+}
+
+#section .list .part1 .dianzan h4 {
+  float: left;
+  font-size: 14px;
+  height: 22px;
+  color: #FFF;
+}
+
+#section .list .part1 .lei {
+  width: 212px;
+  height: 96px;
+  margin: 10px 20px;
+}
+
+#section .list .part1 .lei li {
+  float: left;
+  width: 95px;
+  height: 27px;
+  line-height: 27px;
+  text-align: center;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  background-color: #34B3BB;
+  color: #FFF;
+}
+
+#section .list .part2 {
+  float: left;
+  width: 300px;
+  height: 398px;
+}
+
+#section .list .part2 .shang {
+  position: relative;
+  width: 300px;
+  height: 198px;
+  background-color: #F2F2F2;
+}
+
+#section .list .part2 .shang h2 {
+  width: 280px;
+  height: 44px;
+  line-height: 44px;
+  padding-left: 20px;
+  font-size: 18px;
+  font-weight: 800;
+  color: #555;
+}
+
+#section .list .part2 .shang span {
+  display: block;
+  color: #808080;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+
+#section .list .part2 .shang p {
+  line-height: 30px;
+  color: #FF0000;
+  font-size: 14px;
+  padding-left: 20px;
+}
+
+#section .list .part2 .shang img {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+}
+
+#section .list .part2 .shang:hover img {
+  transform: translateX(-10px);
+  transition: all 1s ease;
+}
+
+#section .list .part2 .xia {
+  position: relative;
+  width: 300px;
+  height: 198px;
+  background-color: #F2F2F2;
+  margin-top: 2px;
+}
+
+#section .list .part2 .xia h2 {
+  width: 280px;
+  height: 44px;
+  line-height: 44px;
+  padding-left: 20px;
+  font-size: 18px;
+  font-weight: 800;
+  color: #555;
+}
+
+#section .list .part2 .xia span {
+  display: block;
+  color: #808080;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+
+#section .list .part2 .xia p {
+  line-height: 30px;
+  color: #FF0000;
+  font-size: 14px;
+  padding-left: 20px;
+}
+
+#section .list .part2 .xia img {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+}
+
+#section .list .part2 .xia:hover img {
+  transform: translateX(-10px);
+  transition: all 1s ease;
+}
+
+#section .list .part3 {
+  position: relative;
+  float: left;
+  width: 360px;
+  height: 398px;
+  background-image: url(../images/ms.png);
+}
+
+#section .list .part3:hover img {
+  transform: translateX(-10px);
+  transition: all 1s linear;
+}
+
+#section .list .part3 img {
+  margin: 14px 15px;
+}
+
+#section .list .part3 .wrap {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  width: 360px;
+}
+
+#section .list .part3 .wrap h2 {
+  width: 330px;
+  height: 45px;
+  line-height: 45px;
+}
+
+#section .list .part3 .wrap h2 span {
+  background-color: #ed1f35;
+  font-size: 14px;
+  color: #FFF;
+}
+
+#section .list .part3 .wrap h1 {
+  font-size: 36px;
+  color: #333;
+  font-weight: 800;
+}
+
+#section .list .part3 .wrap p {
+  line-height: 32px;
+  font-size: 16px;
+  color: #333;
+}

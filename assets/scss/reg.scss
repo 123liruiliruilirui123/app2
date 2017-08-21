@@ -1,0 +1,256 @@
+#container {
+    width: 100%;
+    min-height: 500px;
+    margin: 0 auto;
+    font-family: 'microsoft yahei';
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+#header {
+    width: 1100px;
+    height: 115px;
+    margin: 0 auto;
+    line-height: 115px;
+    .logo {
+        display: inline-block;
+        width: 127px;
+        height: 66px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 26px;
+    }
+    h1 {
+        display: inline-block;
+        vertical-align: middle;
+        width: 140px;
+        height: 64px;
+        padding-left: 25px;
+        line-height: 64px;
+        border-left: 1px solid #888;
+        font-size: 26px;
+        font-weight: 400;
+        color: #888;
+    }
+    .logo1 {
+        display: inline-block;
+        float: right;
+        width: 138px;
+        height: 40px;
+        font-size: 12px;
+        color: #555;
+        font-family: 'microsoft yahei';
+        vertical-align: bottom;
+        margin-top: 75px;
+        padding-right: 85px;
+        line-height: 40px;
+        img {
+            vertical-align: middle;
+        }
+        span {
+            display: inline-block;
+        }
+    }
+}
+
+#section {
+    position: relative;
+    width: 100%;
+    height: 516.5px;
+    background: {
+        image: url(../images/reg.jpg);
+        position: center;
+        size: cover;
+        repeat: no-repeat;
+    }
+    padding-top: 33.5px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #333;
+    .form {
+        position: relative;
+        width: 330px;
+        height: 417px;
+        overflow: hidden;
+        float: right;
+        margin-right: 240px;
+        border: 1px solid #e5e5e5;
+        background-color: #fff;
+        z-index: 10;
+        opacity: .95;
+        .login-header {
+            position: relative;
+            width: 277px;
+            height: 58px;
+            line-height: 58px;
+            margin: 0 auto;
+            border-bottom: 2px solid #f60;
+            color: #333;
+            p {
+                width: 123px;
+                text-align: center;
+                margin: 0 auto;
+                font-size: 16px;
+                font-weight: 700;
+                font-family: "microsoft yahei";
+                letter-spacing: 1px;
+            }
+            p:first-child {
+                border-bottom: 2px solid #f60;
+                padding: 0 2px;
+            }
+        }
+        @mixin login {
+            margin: 0 auto;
+            width: 275px;
+            height: 36px;
+            margin-top: 36px;
+            border: solid 1px #ccc;
+            height: 36px;
+            border-radius: 2px;
+            img {
+                float: left;
+            }
+            input {
+                margin-top: 10px;
+                float: left;
+                font-family: "microsoft yahei";
+                padding-left: 10px;
+                border: 0;
+                outline: 0;
+            }
+        }
+        .login-name {
+            @include login;
+        }
+        .login-pass {
+            @include login;
+            margin-top: 16px;
+        }
+        .login-mima {
+            @include login;
+            margin-top: 16px;
+        }
+        .login-xuan {
+            width: 277px;
+            height: 19px;
+            margin: 0 auto;
+            margin-top: 34px;
+            font-size: 12px;
+            line-height: 1.5;
+            text-align: center;
+            color: #333;
+            em {
+                display: inline-block;
+                width: 12px;
+                height: 12px;
+                border: 1px solid #F60;
+                border-radius: 50%;
+            }
+            .bb {
+                margin-left: 60px;
+            }
+            a {
+                margin-top: 1px;
+                font-size: 12px;
+
+                color: #333;
+                &:hover {
+                    color: #ff9400;
+                    text-decoration: underline;
+                }
+            }
+        }
+        .login-submit {
+            width: 277px;
+            height: 38px;
+            box-shadow: 0 1px 5px -1px #f60;
+            font-family: microsoft yahei;
+            font-weight: 700;
+            padding-bottom: 6px;
+            padding-top: 6px;
+            font-size: 16px;
+            color: #fff;
+            margin: 20px auto;
+            margin-left: 25px;
+            background-color: #cc7600;
+            border: 0;
+            outline: 0;
+        }
+        .login-footer {
+            padding: 20px 26px 0;
+            width: 278px;
+            height: 22px;
+            margin: 0;
+            border-top: dashed 1px #ebebeb;
+            background-color: #f3f3f3;
+            opacity: .95;
+            position: relative;
+            span {
+                margin-right: 40px;
+                color: #999;
+                line-height: 12px;
+                font-size: 12px;
+                a {
+                    color: #f60;
+                }
+            }
+        }
+    }
+}
+
+#footer {
+    width: 100%;
+    height: 126px;
+    background: #fff;
+    padding-top: 46px;
+    padding-bottom: 53px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #333;
+    ul {
+        width: 1100px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li {
+            display: inline;
+            float: left;
+            a {
+                padding: 0 5px;
+                border-right: 1px solid #eee;
+                color: #666;
+                font-size: 12px;
+            }
+        }
+    }
+    p {
+        margin-bottom: 10px;
+        color: #999;
+        text-align: center;
+    }
+    .tubiao {
+        overflow: hidden;
+        width: 1100px;
+        height: 48px;
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            float: left;
+            margin: 0 10px;
+        }
+    }
+}

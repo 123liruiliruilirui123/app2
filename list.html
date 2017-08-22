@@ -9,7 +9,9 @@
     <!--页面图标css样式-->
     <link rel="stylesheet" href="assets/css/reset.css">
     <!--页面图标css样式-->
-    <link rel="stylesheet" href="//at.alicdn.com/t/font_329483_n8obs250ckf647vi.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_329483_zp2akjpa56dsfw29.css">
+    <!--页面轮播图插件-->
+    <link rel="stylesheet" href="assets/plugins/swiper/css/swiper.min.css">
 </head>
 
 <body>
@@ -34,12 +36,13 @@
                             <li><a href="#">免费注册</a></li>
                             <li><a href="#">我的订单</a></li>
                             <li class="dd">
-                                <a href="#">我是雇主<i class="iconfont icon-icon"></i></a>
-                                <ul>
+                                <a href="#">我是雇主<i class="iconfont icon-icon"></i>
+                                <ul class="zuji">
                                     <li>我的足迹</li>
                                     <li>我的收藏</li>
                                     <li>雇主俱乐部</li>
                                 </ul>
+                                </a>
                             </li>
                             <li><a href="#">我是服务商<i class="iconfont icon-icon"></i></a></li>
                             <li><a href="#">帮助中心<i class="iconfont icon-icon"></i></a></li>
@@ -77,44 +80,305 @@
                     <input type="submit" value="免费发送需求" class="send">
                 </div>
             </div>
-            <div class="header-bottom">
-                <div class="wrap">
-                    <div class="liebiao"><i class="iconfont icon-liebiao1"></i>
+            <div class="hwrap">
+                <div class="header-bottom">
+                    <div class="wrap">
+                        <div class="liebiao"><i class="iconfont icon-liebiao1"></i>
+                        </div>
+                        <span>首页</span>
+                        <ul class="lb-left">
+                            <li>网站建设</li>
+                            <li>移动应用</li>
+                            <li>软件开发</li>
+                            <li>UI设计</li>
+                            <li class="zh">解决方案</li>
+                        </ul>
+                        <ul class="lb-right">
+                            <li>服务商库
+                                <div>
+                                    <p>网站建设</p>
+                                    <p>移动应用</p>
+                                    <p>软件开发</p>
+                                    <p>UI设计</p>
+                                    <p>行业解决方案</p>
+                                </div>
+                            </li>
+                            <li>需求大厅
+                                <div>
+                                    <p>网站建设</p>
+                                    <p>移动应用</p>
+                                    <p>软件开发</p>
+                                    <p>UI设计</p>
+                                    <p>行业解决方案</p>
+                                </div>
+                            </li>
+                            <li>案例库
+                                <div>
+                                    <p>网站建设</p>
+                                    <p>移动应用</p>
+                                    <p>软件开发</p>
+                                    <p>UI设计</p>
+                                    <p>行业解决方案</p>
+                                </div>
+                            </li>
+                            <li>云端软件园</li>
+                            <li>签约服务商
+                                <div>
+                                    <p>网站建设</p>
+                                    <p>移动应用</p>
+                                    <p>软件开发</p>
+                                </div>
+                            </li>
+                            <li>项目估价</li>
+                        </ul>
+                        <em></em>
                     </div>
-                    <span>首页</span>
-                    <ul class="lb-left">
-                        <li>网站建设</li>
-                        <li>移动应用</li>
-                        <li>软件开发</li>
-                        <li>UI设计</li>
-                        <li class="zh">解决方案</li>
-                    </ul>
-                    <ul class="lb-right">
-                        <li>服务商库</li>
-                        <li>需求大厅</li>
-                        <li>案例库</li>
-                        <li>云端软件园</li>
-                        <li>签约服务商</li>
-                        <li>项目估价</li>
-                    </ul>
+                </div>
+                <div class="hidebar">
+                    <div class="barlist">
+                        <dl class="item-list bor">
+                            <dt>定制网站</dt>
+                            <dd><a href="#">企业网站</a></dd>
+                            <dd><a href="#">电商网站</a></dd>
+                            <dd>金融网站</dd>
+                            <dd>门户网站</dd>
+                            <dd>教育网站</dd>
+                            <dd>生活服务</dd>
+                        </dl>
+                        <dl class="item-list bor">
+                            <dt>手机网站</dt>
+                            <dd>HTML5网站</dd>
+                            <dd><a href="#">手机商城</a></dd>
+                            <dd>PC+手机站</dd>
+                            <dd><a href="#">手机网站</a></dd>
+                            <dd>教育网站</dd>
+                            <dd>手机金融</dd>
+                        </dl>
+                        <dl class="item-list bor">
+                            <dt>模板建站</dt>
+                            <dd>企业模板建站</dd>
+                            <dd><a href="#">电商模板建站</a></dd>
+                            <dd><a href="#">金融模板建站</a></dd>
+                            <dd>门户模板建站</dd>
+                            <dd>生活服务</dd>
+                            <dd>娱乐网站</dd>
+                        </dl>
+                        <dl class="item-list">
+                            <dt>前端开发</dt>
+                            <dd><a href="#">前段切图</a></dd>
+                            <dd><a href="#">移动前端</a></dd>
+                            <dd><a href="#">网页特效</a></dd>
+                            <dd>JS开发</dd>
+                            <dd>响应式布局</dd>
+                            <dd>前端交互</dd>
+                        </dl>
+                        <dl class="kefu">
+                            <img src="assets/images/yc1.png">
+                        </dl>
+                    </div>
+                    <div class="barlist">
+                        <dl class="item-list bor">
+                            <dt>热门APP开发</dt>
+                            <dd><a href="#">教育培训</a></dd>
+                            <dd><a href="#">生鲜超市</a></dd>
+                            <dd>金融理财</dd>
+                            <dd>新闻资讯</dd>
+                            <dd>智能家居</dd>
+                            <dd>汽车服务</dd>
+                        </dl>
+                        <dl class="item-list bor">
+                            <dt>生活APP开发</dt>
+                            <dd>小程序</dd>
+                            <dd><a href="#">企业号</a></dd>
+                            <dd>服务号</dd>
+                            <dd><a href="#">订阅号</a></dd>
+                            <dd>H5开发</dd>
+                            <dd>定制开发</dd>
+                        </dl>
+                        <dl class="item-list bor">
+                            <dt>微信热门需求</dt>
+                            <dd>微官网</dd>
+                            <dd><a href="#">微商城</a></dd>
+                            <dd><a href="#">微餐饮</a></dd>
+                            <dd>门户模板建站</dd>
+                            <dd>生活服务</dd>
+                            <dd>娱乐网站</dd>
+                        </dl>
+                        <dl class="item-list">
+                            <dt>微信热门行业</dt>
+                            <dd><a href="#">前段切图</a></dd>
+                            <dd><a href="#">移动前端</a></dd>
+                            <dd><a href="#">网页特效</a></dd>
+                            <dd>JS开发</dd>
+                            <dd>响应式布局</dd>
+                            <dd>前端交互</dd>
+                        </dl>
+                        <dl class="kefu">
+                            <img src="assets/images/yc2.png">
+                        </dl>
+                    </div>
+                    <div class="barlist">
+                        <dl class="item-list bor">
+                            <dt>企业管理软件</dt>
+                            <dd><a href="#">ERP系统</a></dd>
+                            <dd><a href="#">电商网站</a></dd>
+                            <dd>金融网站</dd>
+                            <dd>门户网站</dd>
+                            <dd>教育网站</dd>
+                            <dd>生活服务</dd>
+                        </dl>
+                        <dl class="item-list bor">
+                            <dt>工具软件</dt>
+                            <dd>HTML5网站</dd>
+                            <dd><a href="#">手机商城</a></dd>
+                            <dd>PC+手机站</dd>
+                            <dd><a href="#">手机网站</a></dd>
+                            <dd>教育网站</dd>
+                            <dd>手机金融</dd>
+                        </dl>
+                        <dl class="item-list bor">
+                            <dt>嵌入式系统</dt>
+                            <dd>企业模板建站</dd>
+                            <dd><a href="#">电商模板建站</a></dd>
+                            <dd><a href="#">金融模板建站</a></dd>
+                            <dd>门户模板建站</dd>
+                            <dd>生活服务</dd>
+                            <dd>娱乐网站</dd>
+                        </dl>
+                        <dl class="item-list">
+                            <dt>插件开发</dt>
+                            <dd><a href="#">前段切图</a></dd>
+                            <dd><a href="#">移动前端</a></dd>
+                            <dd><a href="#">网页特效</a></dd>
+                            <dd>JS开发</dd>
+                            <dd>响应式布局</dd>
+                            <dd>前端交互</dd>
+                        </dl>
+                        <dl class="kefu">
+                            <img src="assets/images/yc3.png">
+                        </dl>
+                    </div>
+                    <div class="barlist">
+                        <dl class="item-list bor">
+                            <dt>网站UI设计</dt>
+                            <dd><a href="#">网页设计</a></dd>
+                            <dd><a href="#">电商网站</a></dd>
+                            <dd>金融网站</dd>
+                            <dd>门户网站</dd>
+                            <dd>教育网站</dd>
+                            <dd>生活服务</dd>
+                        </dl>
+                        <dl class="item-list bor">
+                            <dt>移动应用UI</dt>
+                            <dd>HTML5网站</dd>
+                            <dd><a href="#">手机商城</a></dd>
+                            <dd>PC+手机站</dd>
+                            <dd><a href="#">手机网站</a></dd>
+                            <dd>教育网站</dd>
+                            <dd>手机金融</dd>
+                        </dl>
+                        <dl class="item-list bor">
+                            <dt>软件设计</dt>
+                            <dd>企业模板建站</dd>
+                            <dd><a href="#">电商模板建站</a></dd>
+                            <dd><a href="#">金融模板建站</a></dd>
+                            <dd>门户模板建站</dd>
+                            <dd>生活服务</dd>
+                            <dd>娱乐网站</dd>
+                        </dl>
+                        <dl class="item-list">
+                            <dt>前端开发</dt>
+                            <dd><a href="#">前段切图</a></dd>
+                            <dd><a href="#">移动前端</a></dd>
+                            <dd><a href="#">网页特效</a></dd>
+                            <dd>JS开发</dd>
+                            <dd>响应式布局</dd>
+                            <dd>前端交互</dd>
+                        </dl>
+                        <dl class="kefu">
+                            <img src="assets/images/yc4.png">
+                        </dl>
+                    </div>
+                    <div class="barlist">
+                        <dl class="item-list bor">
+                            <dt>电商行业</dt>
+                            <dd><a href="#">企业网站</a></dd>
+                            <dd><a href="#">电商网站</a></dd>
+                            <dd>金融网站</dd>
+                            <dd>门户网站</dd>
+                            <dd>教育网站</dd>
+                            <dd>生活服务</dd>
+                        </dl>
+                        <dl class="item-list bor">
+                            <dt>餐饮行业</dt>
+                            <dd>HTML5网站</dd>
+                            <dd><a href="#">手机商城</a></dd>
+                            <dd>PC+手机站</dd>
+                            <dd><a href="#">手机网站</a></dd>
+                            <dd>教育网站</dd>
+                            <dd>手机金融</dd>
+                        </dl>
+                        <dl class="item-list bor">
+                            <dt>金茸保健</dt>
+                            <dd>企业模板建站</dd>
+                            <dd><a href="#">电商模板建站</a></dd>
+                            <dd><a href="#">金融模板建站</a></dd>
+                            <dd>门户模板建站</dd>
+                            <dd>生活服务</dd>
+                            <dd>娱乐网站</dd>
+                        </dl>
+                        <dl class="item-list">
+                            <dt>社区物业</dt>
+                            <dd><a href="#">前段切图</a></dd>
+                            <dd><a href="#">移动前端</a></dd>
+                            <dd><a href="#">网页特效</a></dd>
+                            <dd>JS开发</dd>
+                            <dd>响应式布局</dd>
+                            <dd>前端交互</dd>
+                        </dl>
+                        <dl class="item-list">
+                            <dt>物流配送</dt>
+                            <dd><a href="#">前段切图</a></dd>
+                            <dd><a href="#">移动前端</a></dd>
+                            <dd><a href="#">网页特效</a></dd>
+                            <dd>JS开发</dd>
+                            <dd>响应式布局</dd>
+                            <dd>前端交互</dd>
+                        </dl>
+                    </div>
                 </div>
             </div>
         </div>
         <div id="section">
-            <div class="lunbo">
-                <ul class="lunbo-body">
-                    <li><img src="assets/images/bj3.jpg"></li>
-                    <li><img src="assets/images/bj1.jpg"></li>
-                    <li><img src="assets/images/bj2.jpg"></li>
-                    <li><img src="assets/images/bj4.jpg"></li>
-                </ul>
-                <ol class="lunbo-index">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ol>
+            <!--轮播图开始-->
+            <!--  <div class="lunbo">
+               <ul class="lunbo-body">
+                   <li><img src="assets/images/bj3.jpg"></li>
+                   <li><img src="assets/images/bj1.jpg"></li>
+                   <li><img src="assets/images/bj2.jpg"></li>
+                   <li><img src="assets/images/bj4.jpg"></li>
+               </ul>
+               <ol class="lunbo-index">
+                   <li></li>
+                   <li></li>
+                   <li></li>
+                   <li></li>
+               </ol>
+           </div> -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(assets/images/bj3.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(assets/images/bj1.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(assets/images/bj2.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(assets/images/bj4.jpg)"></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination swiper-pagination-white"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next swiper-button-white"></div>
+                <div class="swiper-button-prev swiper-button-white"></div>
             </div>
+            <!--轮播图结束-->
             <div class="remen">
                 <p>
                     <img src="assets/images/b1.png">
@@ -214,16 +478,16 @@
             </div>
             <div class="list1">
                 <div class="part1">
-                    <h3>电商行业</h3>
-                    <P>让天下没有难做的电商</P>
+                    <h3>餐饮行业</h3>
+                    <P>让传统餐饮走向互联网化</P>
                     <div class="dianzan">
                         <img src="assets/images/dz.png">
-                        <h4>多终端独立商城系统</h4>
-                        <h4>三端一口价</h4>
+                        <h4>网站建设营销</h4>
+                        <h4>八折建站，加享推广</h4>
                     </div>
                     <ul class="lei">
-                        <li>跨境电商</li>
-                        <li>农村电商</li>
+                        <li>点菜系统</li>
+                        <li>收银系统</li>
                         <li>零售电商</li>
                         <li>生鲜电商</li>
                         <li>o2o电商</li>
@@ -232,29 +496,29 @@
                 </div>
                 <div class="part2">
                     <div class="shang">
-                        <h2>网络商城</h2>
-                        <span>跨界电商O2O解决平台</span>
+                        <h2>跑腿餐饮新时代</h2>
+                        <span>享受跑腿优质时代</span>
                         <p>￥39800起</p>
                         <img src="assets/images/s.png" width="150" height="102">
                     </div>
                     <div class="shang xia">
-                        <h2>传统行业转型电商</h2>
+                        <h2>点菜系统</h2>
                         <span>PC+微商城+手机+APP+电商平台多段触发</span>
                         <p>￥25000起</p>
                         <img src="assets/images/x.png" width="150" height="102">
                     </div>
                 </div>
                 <div class="part3">
-                    <img src="assets/images/bzd.jpg" width="330" height="367">
+                    <img src="assets/images/n1.png" width="330" height="367">
                     <div class="wrap">
-                        <h2><span>抢占O2O</span></h2>
-                        <h1>互联网+解决方案</h1>
+                        <h2><span>线上线下</span></h2>
+                        <h1>餐饮行业解决方案</h1>
                         <p>定制你的专属电商APP</p>
                     </div>
                 </div>
                 <div class="part2">
                     <div class="shang">
-                        <h2>电商行业</h2>
+                        <h2>餐饮管理</h2>
                         <span>商租、零售、跨境电商</span>
                         <p>￥5700起</p>
                         <img src="assets/images/ss.png" width="150" height="102">
@@ -269,8 +533,8 @@
             </div>
             <div class="list2">
                 <div class="part1">
-                    <h3>电商行业</h3>
-                    <P>让天下没有难做的电商</P>
+                    <h3>金融保险</h3>
+                    <P>分享财富，便捷理财</P>
                     <div class="dianzan">
                         <img src="assets/images/dz.png">
                         <h4>多终端独立商城系统</h4>
@@ -287,29 +551,29 @@
                 </div>
                 <div class="part2">
                     <div class="shang">
-                        <h2>网络商城</h2>
-                        <span>跨界电商O2O解决平台</span>
+                        <h2>消费借贷行业解决方案</h2>
+                        <span>金融理财投资管理</span>
                         <p>￥39800起</p>
                         <img src="assets/images/s.png" width="150" height="102">
                     </div>
                     <div class="shang xia">
-                        <h2>传统行业转型电商</h2>
+                        <h2>保险解决方案</h2>
                         <span>PC+微商城+手机+APP+电商平台多段触发</span>
                         <p>￥25000起</p>
                         <img src="assets/images/x.png" width="150" height="102">
                     </div>
                 </div>
                 <div class="part3">
-                    <img src="assets/images/bzd.jpg" width="330" height="367">
+                    <img src="assets/images/n2.png" width="330" height="367">
                     <div class="wrap">
-                        <h2><span>抢占O2O</span></h2>
-                        <h1>互联网+解决方案</h1>
+                        <h2><span>解决方案</span></h2>
+                        <h1>多平台移动金融</h1>
                         <p>定制你的专属电商APP</p>
                     </div>
                 </div>
                 <div class="part2">
                     <div class="shang">
-                        <h2>电商行业</h2>
+                        <h2>证券成品软件</h2>
                         <span>商租、零售、跨境电商</span>
                         <p>￥5700起</p>
                         <img src="assets/images/ss.png" width="150" height="102">
@@ -324,8 +588,8 @@
             </div>
             <div class="list3">
                 <div class="part1">
-                    <h3>电商行业</h3>
-                    <P>让天下没有难做的电商</P>
+                    <h3>社区物业</h3>
+                    <P>智慧社区，构建生态圈</P>
                     <div class="dianzan">
                         <img src="assets/images/dz.png">
                         <h4>多终端独立商城系统</h4>
@@ -342,7 +606,7 @@
                 </div>
                 <div class="part2">
                     <div class="shang">
-                        <h2>网络商城</h2>
+                        <h2>社区电商</h2>
                         <span>跨界电商O2O解决平台</span>
                         <p>￥39800起</p>
                         <img src="assets/images/s.png" width="150" height="102">
@@ -355,16 +619,16 @@
                     </div>
                 </div>
                 <div class="part3">
-                    <img src="assets/images/bzd.jpg" width="330" height="367">
+                    <img src="assets/images/n3.png" width="330" height="367">
                     <div class="wrap">
-                        <h2><span>抢占O2O</span></h2>
-                        <h1>互联网+解决方案</h1>
+                        <h2><span>构建生态链</span></h2>
+                        <h1>智慧社区</h1>
                         <p>定制你的专属电商APP</p>
                     </div>
                 </div>
                 <div class="part2">
                     <div class="shang">
-                        <h2>电商行业</h2>
+                        <h2>移动社区</h2>
                         <span>商租、零售、跨境电商</span>
                         <p>￥5700起</p>
                         <img src="assets/images/ss.png" width="150" height="102">
@@ -379,7 +643,7 @@
             </div>
             <div class="list4">
                 <div class="part1">
-                    <h3>电商行业</h3>
+                    <h3>物流配送</h3>
                     <P>让天下没有难做的电商</P>
                     <div class="dianzan">
                         <img src="assets/images/dz.png">
@@ -397,7 +661,7 @@
                 </div>
                 <div class="part2">
                     <div class="shang">
-                        <h2>网络商城</h2>
+                        <h2>综合型物流系统</h2>
                         <span>跨界电商O2O解决平台</span>
                         <p>￥39800起</p>
                         <img src="assets/images/s.png" width="150" height="102">
@@ -410,10 +674,10 @@
                     </div>
                 </div>
                 <div class="part3">
-                    <img src="assets/images/bzd.jpg" width="330" height="367">
+                    <img src="assets/images/n4.jpg" width="330" height="367">
                     <div class="wrap">
-                        <h2><span>抢占O2O</span></h2>
-                        <h1>互联网+解决方案</h1>
+                        <h2><span>便捷时代</span></h2>
+                        <h1>智慧物流</h1>
                         <p>定制你的专属电商APP</p>
                     </div>
                 </div>
@@ -434,8 +698,8 @@
             </div>
             <div class="list5">
                 <div class="part1">
-                    <h3>电商行业</h3>
-                    <P>让天下没有难做的电商</P>
+                    <h3>教育培训</h3>
+                    <P>突破传统，开启互联网模式</P>
                     <div class="dianzan">
                         <img src="assets/images/dz.png">
                         <h4>多终端独立商城系统</h4>
@@ -452,7 +716,7 @@
                 </div>
                 <div class="part2">
                     <div class="shang">
-                        <h2>网络商城</h2>
+                        <h2>o2o智慧学校</h2>
                         <span>跨界电商O2O解决平台</span>
                         <p>￥39800起</p>
                         <img src="assets/images/s.png" width="150" height="102">
@@ -465,11 +729,11 @@
                     </div>
                 </div>
                 <div class="part3">
-                    <img src="assets/images/bzd.jpg" width="330" height="367">
+                    <img src="assets/images/n5.jpg" width="330" height="367">
                     <div class="wrap">
-                        <h2><span>抢占O2O</span></h2>
-                        <h1>互联网+解决方案</h1>
-                        <p>定制你的专属电商APP</p>
+                        <h2><span>解决方案</span></h2>
+                        <h1>数字化校园</h1>
+                        <p>移动数字化校园管理平台</p>
                     </div>
                 </div>
                 <div class="part2">
@@ -489,8 +753,8 @@
             </div>
             <div class="list6">
                 <div class="part1">
-                    <h3>电商行业</h3>
-                    <P>让天下没有难做的电商</P>
+                    <h3>医疗卫生</h3>
+                    <P>移动医疗，轻松看病</P>
                     <div class="dianzan">
                         <img src="assets/images/dz.png">
                         <h4>多终端独立商城系统</h4>
@@ -507,7 +771,7 @@
                 </div>
                 <div class="part2">
                     <div class="shang">
-                        <h2>网络商城</h2>
+                        <h2>医疗设备管理</h2>
                         <span>跨界电商O2O解决平台</span>
                         <p>￥39800起</p>
                         <img src="assets/images/s.png" width="150" height="102">
@@ -520,16 +784,16 @@
                     </div>
                 </div>
                 <div class="part3">
-                    <img src="assets/images/bzd.jpg" width="330" height="367">
+                    <img src="assets/images/n6.jpg" width="330" height="367">
                     <div class="wrap">
-                        <h2><span>抢占O2O</span></h2>
-                        <h1>互联网+解决方案</h1>
-                        <p>定制你的专属电商APP</p>
+                        <h2><span>医院解决方案</span></h2>
+                        <h1>移动医疗</h1>
+                        <p>涵盖电商慢病管理等综合平台</p>
                     </div>
                 </div>
                 <div class="part2">
                     <div class="shang">
-                        <h2>电商行业</h2>
+                        <h2>医疗官网</h2>
                         <span>商租、零售、跨境电商</span>
                         <p>￥5700起</p>
                         <img src="assets/images/ss.png" width="150" height="102">
@@ -543,8 +807,109 @@
                 </div>
             </div>
         </div>
-        <div id="footer"></div>
+        <div id="footer">
+            <div class="promise">
+                <h3>服务承诺</h3>
+                <div class="promise-list">
+                    <div class="one ones">
+                        <img src="assets/images/c1.png">
+                        <p>一对一专业服务</p>
+                        <p>需要交易顾问全程跟进</p>
+                        <p>彻底解决您的所有交易</p>
+                    </div>
+                    <div class="one two">
+                        <img src="assets/images/c2.png">
+                        <p>资金安全无忧</p>
+                        <p>在线协议分段付款</p>
+                        <p>满意后付款交易更安全</p>
+                    </div>
+                    <div class="one three">
+                        <img src="assets/images/c3.png">
+                        <p>三重保障</p>
+                        <p>需要交易顾问全程跟进</p>
+                        <p>每个服务商都经过严格的资质认证</p>
+                    </div>
+                </div>
+            </div>
+            <div class="foot">
+                <div class="item">
+                    <dl class="item-list">
+                        <dt><i class="iconfont icon-wenhao"></i>新手指南</dt>
+                        <dd>注册新用户</dd>
+                        <dd>服务商入门</dd>
+                        <dd>开发者入门</dd>
+                        <dd>雇主入门</dd>
+                        <dd>规则中心</dd>
+                    </dl>
+                    <dl class="item-list">
+                        <dt><i class="iconfont icon-chaojiguzhu"></i>我是雇主</dt>
+                        <dd>发布需求</dd>
+                        <dd>购买设计作品</dd>
+                        <dd>雇主故事</dd>
+                        <dd>挑选服务商</dd>
+                        <dd>成品印刷</dd>
+                    </dl>
+                    <dl class="item-list">
+                        <dt><i class="iconfont icon-shangwufuwu"></i>我是服务商</dt>
+                        <dd>投标赚钱</dd>
+                        <dd>赚钱利器</dd>
+                        <dd>服务商联盟</dd>
+                        <dd>开放商机</dd>
+                        <dd>八戒商学院</dd>
+                    </dl>
+                    <dl class="item-list">
+                        <dt><i class="iconfont icon-baozhang"></i>交易保障</dt>
+                        <dd>双倍赔付</dd>
+                        <dd>猪八戒担保交易</dd>
+                        <dd>诚信管理中心</dd>
+                        <dd>信用查询</dd>
+                        <dd>曝光台</dd>
+                    </dl>
+                    <div class="bao">
+                        <img src="assets/images/fwb.png">
+                        <p>猪八戒网致力于成为</p>
+                        <p>最诚信的服务众包平台</p>
+                    </div>
+                    <dl class="kefu">
+                        <dt>联系客服</dt>
+                        <dd><i class="iconfont icon-weibo1"></i></dd>
+                        <dd><i class="iconfont icon-QQ"></i></dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="tool">
+                <p><i class="iconfont icon-shouji"></i>
+                    <span>应用</span>
+                </p>
+                <p><i class="iconfont icon-kefu"></i>
+                    <span>客服</span>
+                </p>
+                <p><i class="iconfont icon-xinxi"></i>
+                    <span>意见</span>
+                </p>
+            </div>
+            <div class="erweima">
+                <img src="assets/images/top-wei.jpg" width="100" height="100">
+                <p>八戒特惠，手机专享App 5折抢</p>
+                <img src="assets/images/bot.jpg">
+                <p>服务商专属APP</p>
+            </div>
+        </div>
     </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/list.js"></script>
+    <script src="assets/plugins/swiper/js/swiper.min.js"></script>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 30,
+        effect: 'fade',
+        loop: true
+    });
+    </script>
 </body>
 
 </html>

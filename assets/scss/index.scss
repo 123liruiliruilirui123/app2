@@ -1,1531 +1,1531 @@
-             #container {
-                 width: 100%;
-                 min-height: 2000px;
-                 margin: 0 auto;
-                 background-color: #F3F4FF;
-             }
+#container {
+    width: 100%;
+    min-height: 2000px;
+    margin: 0 auto;
+    background-color: #F3F4FF;
+}
 
-             a {
-                 text-decoration: none;
-             }
+a {
+    text-decoration: none;
+}
 
-             ul {
-                 list-style: none;
-             }
+ul {
+    list-style: none;
+}
 
-             @mixin title {
-                 width: 1200px;
-                 height: 162px;
-                 margin: 0 auto;
-                 margin-top: 58px;
-                 h2 {
-                     height: 70px;
-                     font-weight: 100;
-                     font-family: 'Microsoft YaHei';
-                     line-height: 70px;
-                     text-align: center;
-                     font-size: 38px;
-                     color: #333;
-                 }
-                 p {
-                     height: 34px;
-                     color: #999;
-                     line-height: 34px;
-                     text-align: center;
-                     font-size: 16px;
-                     font-family: 'Microsoft YaHei';
-                 }
-             }
+@mixin title {
+    width: 1200px;
+    height: 162px;
+    margin: 0 auto;
+    margin-top: 58px;
+    h2 {
+        height: 70px;
+        font-weight: 100;
+        font-family: 'Microsoft YaHei';
+        line-height: 70px;
+        text-align: center;
+        font-size: 38px;
+        color: #333;
+    }
+    p {
+        height: 34px;
+        color: #999;
+        line-height: 34px;
+        text-align: center;
+        font-size: 16px;
+        font-family: 'Microsoft YaHei';
+    }
+}
 
-             @mixin showmore {
-                 width: 1122px;
-                 height: 21px;
-                 margin: 0 auto;
-                 font-size: 14px;
-                 font-family: "Microsoft YaHei";
-                 text-align: right;
-                 padding-right: 31px;
-                 a {
-                     color: #4380ff;
-                 }
-             }
+@mixin showmore {
+    width: 1122px;
+    height: 21px;
+    margin: 0 auto;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    text-align: right;
+    padding-right: 31px;
+    a {
+        color: #4380ff;
+    }
+}
 
-             @mixin left {
-                 position: absolute;
-                 top: 450px;
-                 left: 85px;
-                 width: 60px;
-                 height: 86px;
-                 color: #fff;
-                 opacity: .75;
-                 outline: none;
-                 border: none;
-                 background: {
-                     image: url(../images/left.png);
-                     position: center;
-                     repeat: no-repeat;
-                 }
-             }
+@mixin left {
+    position: absolute;
+    top: 450px;
+    left: 85px;
+    width: 60px;
+    height: 86px;
+    color: #fff;
+    opacity: .75;
+    outline: none;
+    border: none;
+    background: {
+        image: url(../images/left.png);
+        position: center;
+        repeat: no-repeat;
+    }
+}
 
-             @mixin right {
-                 position: absolute;
-                 top: 450px;
-                 right: 85px;
-                 width: 60px;
-                 height: 86px;
-                 color: #fff;
-                 opacity: .75;
-                 outline: none;
-                 border: none;
-                 background: {
-                     image: url(../images/right.png);
-                     position: center;
-                     repeat: no-repeat;
-                 }
-             }
+@mixin right {
+    position: absolute;
+    top: 450px;
+    right: 85px;
+    width: 60px;
+    height: 86px;
+    color: #fff;
+    opacity: .75;
+    outline: none;
+    border: none;
+    background: {
+        image: url(../images/right.png);
+        position: center;
+        repeat: no-repeat;
+    }
+}
 
-             @mixin inp {
-                 position: relative;
-                 width: 1110px;
-                 height: 76px;
-                 padding: 9px 12px;
-                 font-size: 14px;
-                 font-family: 'Microsoft YaHei';
-                 box-sizing: border-box;
-                 background-color: #263b9f;
-                 margin: 0 auto;
-                 .inneed {
-                     overflow: hidden;
-                     width: 370px;
-                     line-height: 58px;
-                     height: 58px;
-                     text-align: left;
-                     background-color: #fff;
-                     margin-right: 8px;
-                     padding-left: 16px;
-                     box-sizing: border-box;
-                     font-size: 14px;
-                     font-family: 'Microsoft YaHei';
-                     color: #333;
-                     float: left;
-                     outline: none;
-                     border: 0;
-                 }
-                 .inneed-hide {
-                     z-index: 1;
-                     position: absolute;
-                     top: 10px;
-                     background: #fff;
-                     left: 12px;
-                     width: 370px;
-                     height: 204px;
-                     font-size: 10px;
-                     display: none;
-                     .inneed-hide-textarea {
-                         float: left;
-                         padding: 18px 16px;
-                         width: 370px;
-                         height: 219px;
-                         border: 1px solid #dedede;
-                         box-sizing: border-box;
-                         background: #f7f7f7;
-                         overflow: hidden;
-                         textarea {
-                             width: 100%;
-                             height: 162px;
-                             border: 0;
-                             background: #f7f7f7;
-                             resize: none;
-                             outline: none;
-                             font-size: 18px;
-                         }
-                         .textarea-count {
-                             text-align: right;
-                             font-size: 0;
-                             height: 22px;
-                             line-height: 22px;
-                             span {
-                                 font-size: 16px;
-                                 color: rgba(0, 0, 0, .4);
-                             }
-                         }
-                     }
-                     .inneed-box {
-                         position: absolute;
-                         top: 67px;
-                         right: -270px;
-                         padding: 0 20px 30px;
-                         width: 270px;
-                         font-size: 14px;
-                         font-family: 'Microsoft YaHei';
-                         float: left;
-                         box-sizing: border-box;
-                         background: #f7f7f7;
-                         border: 1px solid #dedede;
-                         border-left: 0;
-                         text-align: left;
-                         h6 {
-                             color: #4380ff;
-                             line-height: 40px;
-                             font-family: 'Microsoft YaHei';
-                         }
-                         p {
-                             width: 229px;
-                             height: 80px;
-                             color: rgba(0, 0, 0, .6);
-                             line-height: 20px;
-                             font-family: 'Microsoft YaHei';
-                             font-size: 14px;
-                             margin: 0 auto;
-                         }
-                     }
-                 }
-                 .phone-num {
-                     float: left;
-                     height: 58px;
-                     padding: 11px 0;
-                     width: 266px;
-                     box-sizing: border-box;
-                     background: #fff;
-                     input {
-                         width: 164px;
-                         font-size: 14px;
-                         font-family: 'Microsoft YaHei';
-                         height: 35px;
-                         line-height: 35px;
-                         border: 0;
-                         padding-left: 16px;
-                         outline: none;
-                         box-shadow: none;
-                     }
-                 }
-                 .oneborder {
-                     width: 1px;
-                     position: absolute;
-                     background: #e4e4e4;
-                     height: 30px;
-                     z-index: 1;
-                     bottom: 22px;
-                 }
-                 .phone-test {
-                     float: left;
-                     height: 58px;
-                     padding: 11px 0;
-                     width: 266px;
-                     box-sizing: border-box;
-                     background: #fff;
-                     .test-num {
-                         float: left;
-                         width: 148px;
-                         font-size: 14px;
-                         font-family: 'Microsoft YaHei';
-                         height: 35px;
-                         line-height: 35px;
-                         border: 0;
-                         padding-left: 16px;
-                         outline: none;
-                         box-shadow: none;
-                     }
-                     .test-pic {
-                         float: right;
-                         color: #fff;
-                         width: 94px;
-                         height: 36px;
-                         font-size: 12px;
-                         background-color: #c6c6c6;
-                         vertical-align: middle;
-                         line-height: 36px;
-                         box-sizing: border-box;
-                         text-align: center;
-                         margin-right: 8px;
-                     }
-                 }
-                 .anniu {
-                     color: #fff;
-                     font-size: 14px;
-                     font-family: "Microsoft YaHei";
-                     font-size: 18px;
-                     width: 168px;
-                     height: 58px;
-                     float: left;
-                     margin-left: 8px;
-                     background-size: 168px 58px;
-                     background-color: #fc5c2a;
-                     border: 0;
-                 }
-             } //头部
-             #header {
-                 width: 100%;
-                 height: 686px;
-                 background: {
-                     size: 1920px 687px;
-                     image: url(../images/beijing.png);
-                     position: 51% 50%;
-                     repeat: no-repeat;
-                 }
-                 .header-bar {
-                     width: 1200px;
-                     height: 86px;
-                     text-align: center;
-                     margin: 0 auto;
-                     .header-bar-left {
-                         float: left;
-                         width: 341px;
-                         line-height: 85px;
-                         img {
-                             margin-left: 40px;
-                             vertical-align: middle;
-                         }
-                         span {
-                             font-size: 14px;
-                             font-family: 'Microsoft YaHei';
-                             color: #FFF;
-                             padding-left: 18px;
-                             letter-spacing: 3px;
-                         }
-                     }
-                     .header-bar-right {
-                         float: right;
-                         width: 565px;
-                         height: 86px;
-                         line-height: 85px;
-                         ul {
-                             li {
-                                 height: 86px;
-                                 float: left;
-                                 margin-left: 36px;
-                                 a {
-                                     color: #FFF;
-                                     font-size: 14px;
-                                     font-family: 'Microsoft YaHei';
-                                     &:hover {
-                                         border-bottom: 2px solid #fff;
-                                         padding-bottom: 5px;
-                                     }
-                                 }
-                             }
-                         }
-                     }
-                 }
-                 .header-main {
-                     width: 1200px;
-                     height: 600px;
-                     margin: 0 auto;
-                     margin-top: 25px;
-                     .lunbowrap {
-                         display: flex;
-                         width: 1110px;
-                         height: 382px;
-                         margin: 0 auto;
-                         .header-main-left {
-                             position: relative;
-                             width: 582px;
-                             height: 382px;
-                             margin-left: 16px;
-                             padding: 58px 70px 42px 42px;
-                             background-image: url(../images/kuang.png);
-                             box-sizing: border-box;
-                             background-repeat: no-repeat;
-                             background-size: auto;
-                             .main-wrap {
-                                 overflow: hidden;
-                                 width: 469px;
-                                 height: 283px; //第一个轮播图，放大
-                                 ul {
-                                     width: 9999px;
-                                     li {
-                                         float: left;
-                                         &:hover {
-                                             transform: scale(1.1, 1.1);
-                                             transition: (all 0.5s ease);
-                                         }
-                                     }
-                                 }
-                             }
-                             .xuhao {
-                                 position: absolute;
-                                 bottom: 10px;
-                                 left: 270px;
-                                 li {
-                                     float: left;
-                                     margin-right: 10px;
-                                     width: 6px;
-                                     height: 6px;
-                                     background-color: #FFF;
-                                 }
-                             }
-                         }
+@mixin inp {
+    position: relative;
+    width: 1110px;
+    height: 76px;
+    padding: 9px 12px;
+    font-size: 14px;
+    font-family: 'Microsoft YaHei';
+    box-sizing: border-box;
+    background-color: #263b9f;
+    margin: 0 auto;
+    .inneed {
+        overflow: hidden;
+        width: 370px;
+        line-height: 58px;
+        height: 58px;
+        text-align: left;
+        background-color: #fff;
+        margin-right: 8px;
+        padding-left: 16px;
+        box-sizing: border-box;
+        font-size: 14px;
+        font-family: 'Microsoft YaHei';
+        color: #333;
+        float: left;
+        outline: none;
+        border: 0;
+    }
+    .inneed-hide {
+        z-index: 1;
+        position: absolute;
+        top: 10px;
+        background: #fff;
+        left: 12px;
+        width: 370px;
+        height: 204px;
+        font-size: 10px;
+        display: none;
+        .inneed-hide-textarea {
+            float: left;
+            padding: 18px 16px;
+            width: 370px;
+            height: 219px;
+            border: 1px solid #dedede;
+            box-sizing: border-box;
+            background: #f7f7f7;
+            overflow: hidden;
+            textarea {
+                width: 100%;
+                height: 162px;
+                border: 0;
+                background: #f7f7f7;
+                resize: none;
+                outline: none;
+                font-size: 18px;
+            }
+            .textarea-count {
+                text-align: right;
+                font-size: 0;
+                height: 22px;
+                line-height: 22px;
+                span {
+                    font-size: 16px;
+                    color: rgba(0, 0, 0, .4);
+                }
+            }
+        }
+        .inneed-box {
+            position: absolute;
+            top: 67px;
+            right: -270px;
+            padding: 0 20px 30px;
+            width: 270px;
+            font-size: 14px;
+            font-family: 'Microsoft YaHei';
+            float: left;
+            box-sizing: border-box;
+            background: #f7f7f7;
+            border: 1px solid #dedede;
+            border-left: 0;
+            text-align: left;
+            h6 {
+                color: #4380ff;
+                line-height: 40px;
+                font-family: 'Microsoft YaHei';
+            }
+            p {
+                width: 229px;
+                height: 80px;
+                color: rgba(0, 0, 0, .6);
+                line-height: 20px;
+                font-family: 'Microsoft YaHei';
+                font-size: 14px;
+                margin: 0 auto;
+            }
+        }
+    }
+    .phone-num {
+        float: left;
+        height: 58px;
+        padding: 11px 0;
+        width: 266px;
+        box-sizing: border-box;
+        background: #fff;
+        input {
+            width: 164px;
+            font-size: 14px;
+            font-family: 'Microsoft YaHei';
+            height: 35px;
+            line-height: 35px;
+            border: 0;
+            padding-left: 16px;
+            outline: none;
+            box-shadow: none;
+        }
+    }
+    .oneborder {
+        width: 1px;
+        position: absolute;
+        background: #e4e4e4;
+        height: 30px;
+        z-index: 1;
+        bottom: 22px;
+    }
+    .phone-test {
+        float: left;
+        height: 58px;
+        padding: 11px 0;
+        width: 266px;
+        box-sizing: border-box;
+        background: #fff;
+        .test-num {
+            float: left;
+            width: 148px;
+            font-size: 14px;
+            font-family: 'Microsoft YaHei';
+            height: 35px;
+            line-height: 35px;
+            border: 0;
+            padding-left: 16px;
+            outline: none;
+            box-shadow: none;
+        }
+        .test-pic {
+            float: right;
+            color: #fff;
+            width: 94px;
+            height: 36px;
+            font-size: 12px;
+            background-color: #c6c6c6;
+            vertical-align: middle;
+            line-height: 36px;
+            box-sizing: border-box;
+            text-align: center;
+            margin-right: 8px;
+        }
+    }
+    .anniu {
+        color: #fff;
+        font-size: 14px;
+        font-family: "Microsoft YaHei";
+        font-size: 18px;
+        width: 168px;
+        height: 58px;
+        float: left;
+        margin-left: 8px;
+        background-size: 168px 58px;
+        background-color: #fc5c2a;
+        border: 0;
+    }
+} //头部
+#header {
+    width: 100%;
+    height: 686px;
+    background: {
+        size: 1920px 687px;
+        image: url(../images/beijing.png);
+        position: 51% 50%;
+        repeat: no-repeat;
+    }
+    .header-bar {
+        width: 1200px;
+        height: 86px;
+        text-align: center;
+        margin: 0 auto;
+        .header-bar-left {
+            float: left;
+            width: 341px;
+            line-height: 85px;
+            img {
+                margin-left: 40px;
+                vertical-align: middle;
+            }
+            span {
+                font-size: 14px;
+                font-family: 'Microsoft YaHei';
+                color: #FFF;
+                padding-left: 18px;
+                letter-spacing: 3px;
+            }
+        }
+        .header-bar-right {
+            float: right;
+            width: 565px;
+            height: 86px;
+            line-height: 85px;
+            ul {
+                li {
+                    height: 86px;
+                    float: left;
+                    margin-left: 36px;
+                    a {
+                        color: #FFF;
+                        font-size: 14px;
+                        font-family: 'Microsoft YaHei';
+                        &:hover {
+                            border-bottom: 2px solid #fff;
+                            padding-bottom: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .header-main {
+        width: 1200px;
+        height: 600px;
+        margin: 0 auto;
+        margin-top: 25px;
+        .lunbowrap {
+            display: flex;
+            width: 1110px;
+            height: 382px;
+            margin: 0 auto;
+            .header-main-left {
+                position: relative;
+                width: 582px;
+                height: 382px;
+                margin-left: 16px;
+                padding: 58px 70px 42px 42px;
+                background-image: url(../images/kuang.png);
+                box-sizing: border-box;
+                background-repeat: no-repeat;
+                background-size: auto;
+                .main-wrap {
+                    overflow: hidden;
+                    width: 469px;
+                    height: 283px; //第一个轮播图，放大
+                    ul {
+                        width: 9999px;
+                        li {
+                            float: left;
+                            &:hover {
+                                transform: scale(1.1, 1.1);
+                                transition: (all 0.5s ease);
+                            }
+                        }
+                    }
+                }
+                .xuhao {
+                    position: absolute;
+                    bottom: 10px;
+                    left: 270px;
+                    li {
+                        float: left;
+                        margin-right: 10px;
+                        width: 6px;
+                        height: 6px;
+                        background-color: #FFF;
+                    }
+                }
+            }
 
-                         .header-main-right {
-                             width: 366px;
-                             height: 300px;
-                             margin-top: 58px;
-                             margin-left: 60px;
-                             h1 {
-                                 text-align: center;
-                                 line-height: 56px;
-                                 padding-left: 30px;
-                                 position: relative;
-                                 color: #fff;
-                                 font-family: 'Microsoft YaHei';
-                                 strong {
-                                     display: block;
-                                     font-size: 48px;
-                                     font-weight: 800;
-                                 }
-                                 em {
-                                     display: block;
-                                     font-size: 38px;
-                                     font-family: 'Microsoft YaHei';
-                                     letter-spacing: 10px;
-                                 }
-                             }
-                             h1::before {
-                                 content: '';
-                                 width: 40px;
-                                 height: 40px;
-                                 background-image: url(../images/right-top.png);
-                                 background-repeat: no-repeat;
-                                 position: absolute;
-                                 top: -16px;
-                                 left: 25px;
-                             }
-                             h1::after {
-                                 content: '';
-                                 width: 40px;
-                                 height: 40px;
-                                 background-image: url(../images/right-bottom.png);
-                                 background-repeat: no-repeat;
-                                 position: absolute;
-                                 bottom: -8px;
-                                 right: 5px;
-                             }
-                             h2 {
-                                 width: 366px;
-                                 height: 62px;
-                                 img {
-                                     margin: 22px 60px;
-                                 }
-                             }
-                             ul {
-                                 display: flex;
-                                 justify-content: space-around;
-                                 width: 366px;
-                                 margin-left: 20px;
-                                 margin-top: 25px;
-                                 li {
-                                     text-align: center;
-                                     em {
-                                         font-size: 16px;
-                                         color: #FFF;
-                                         font-family: 'Microsoft YaHei';
-                                         height: 82px;
-                                         width: 100%;
-                                         background-image: url(../images/quan.png);
-                                         background-repeat: no-repeat;
-                                         background-position: center center;
-                                         display: inline-block;
-                                         line-height: 82px;
-                                         text-align: center;
-                                     }
-                                     span {
-                                         display: inline-block;
-                                         height: 36px;
-                                         line-height: 36px;
-                                         font-size: 14px;
-                                         color: #FFF;
-                                         font-family: 'Microsoft YaHei';
-                                     }
-                                 }
-                             }
-                         }
-                     }
-                     p {
-                         width: 361px;
-                         height: 38px;
-                         font-size: 14px;
-                         font-family: 'Microsoft YaHei';
-                         line-height: 38px;
-                         color: rgba(255, 255, 255, .7);
-                         margin-left: 40px;
-                         margin-top: 25px;
-                     }
-                     .header-footer {
-                         @include inp;
-                     }
-                 }
-             }
+            .header-main-right {
+                width: 366px;
+                height: 300px;
+                margin-top: 58px;
+                margin-left: 60px;
+                h1 {
+                    text-align: center;
+                    line-height: 56px;
+                    padding-left: 30px;
+                    position: relative;
+                    color: #fff;
+                    font-family: 'Microsoft YaHei';
+                    strong {
+                        display: block;
+                        font-size: 48px;
+                        font-weight: 800;
+                    }
+                    em {
+                        display: block;
+                        font-size: 38px;
+                        font-family: 'Microsoft YaHei';
+                        letter-spacing: 10px;
+                    }
+                }
+                h1::before {
+                    content: '';
+                    width: 40px;
+                    height: 40px;
+                    background-image: url(../images/right-top.png);
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    top: -16px;
+                    left: 25px;
+                }
+                h1::after {
+                    content: '';
+                    width: 40px;
+                    height: 40px;
+                    background-image: url(../images/right-bottom.png);
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    bottom: -8px;
+                    right: 5px;
+                }
+                h2 {
+                    width: 366px;
+                    height: 62px;
+                    img {
+                        margin: 22px 60px;
+                    }
+                }
+                ul {
+                    display: flex;
+                    justify-content: space-around;
+                    width: 366px;
+                    margin-left: 20px;
+                    margin-top: 25px;
+                    li {
+                        text-align: center;
+                        em {
+                            font-size: 16px;
+                            color: #FFF;
+                            font-family: 'Microsoft YaHei';
+                            height: 82px;
+                            width: 100%;
+                            background-image: url(../images/quan.png);
+                            background-repeat: no-repeat;
+                            background-position: center center;
+                            display: inline-block;
+                            line-height: 82px;
+                            text-align: center;
+                        }
+                        span {
+                            display: inline-block;
+                            height: 36px;
+                            line-height: 36px;
+                            font-size: 14px;
+                            color: #FFF;
+                            font-family: 'Microsoft YaHei';
+                        }
+                    }
+                }
+            }
+        }
+        p {
+            width: 361px;
+            height: 38px;
+            font-size: 14px;
+            font-family: 'Microsoft YaHei';
+            line-height: 38px;
+            color: rgba(255, 255, 255, .7);
+            margin-left: 40px;
+            margin-top: 25px;
+        }
+        .header-footer {
+            @include inp;
+        }
+    }
+}
 
-             #section {
-                 width: 100%;
-                 .section-title {
-                     @include title;
-                 }
-                 .section-jianzhan {
-                     width: 1200px;
-                     height: 596px;
-                     margin: 0 auto;
-                     .img-hover {
-                         position: relative;
-                         width: 354px;
-                         height: 224px;
-                         overflow: hidden;
-                         .drop {
-                             display: none;
-                             position: absolute;
-                             top: 0;
-                             left: 0;
-                             width: 354px;
-                             height: 224px;
-                             text-align: center;
-                             line-height: 224px;
-                             background-color: rgba(0, 0, 0, .5);
-                             a {
-                                 color: rgba(255, 255, 255, .7);
-                                 font-size: 16px;
-                                 font-weight: 800;
-                             }
-                         }
-                     }
-                     li {
-                         width: 354px;
-                         margin-left: 34px;
-                         margin-bottom: 34px;
-                         float: left;
+#section {
+    width: 100%;
+    .section-title {
+        @include title;
+    }
+    .section-jianzhan {
+        width: 1200px;
+        height: 596px;
+        margin: 0 auto;
+        .img-hover {
+            position: relative;
+            width: 354px;
+            height: 224px;
+            overflow: hidden;
+            .drop {
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 354px;
+                height: 224px;
+                text-align: center;
+                line-height: 224px;
+                background-color: rgba(0, 0, 0, .5);
+                a {
+                    color: rgba(255, 255, 255, .7);
+                    font-size: 16px;
+                    font-weight: 800;
+                }
+            }
+        }
+        li {
+            width: 354px;
+            margin-left: 34px;
+            margin-bottom: 34px;
+            float: left;
 
-                         h3 {
-                             width: 354px;
-                             height: 45px;
-                             line-height: 45px;
-                             font-size: 16px;
-                             font-family: 'Microsoft YaHei';
-                             font-weight: 500;
-                             background-color: #fff;
-                             span:first-child {
-                                 float: left;
-                                 font-size: 16px;
-                                 font-weight: 500;
-                                 font-family: 'Microsoft YaHei';
-                                 padding-left: 10px;
-                             }
-                             span:nth-child(2) {
-                                 float: right;
-                                 margin-right: 10px;
-                                 color: #377fed;
-                                 font-size: 14px;
-                                 font-family: 'Microsoft YaHei';
-                             }
-                         }
-                         &:hover .spanone {
-                             color: #377fed;
-                         }
-                         &:hover img {
-                             transform: scale(1.1, 1.1);
-                             transition: (all 0.5s ease);
-                         }
-                         &:hover .drop {
-                             display: block;
-                         }
-                     }
-                 }
-                 .section-widget {
-                     width: 100%;
-                     height: 276px;
-                     margin-top: 80px;
-                     background: {
-                         image: url(../images/heise.png);
-                         size: 100% 276px;
-                         repeat: no-repeat;
-                     } //中间蓝色图片展示
-                     ul {
-                         width: 1200px;
-                         height: 276px;
-                         margin: 0 auto;
-                         li {
-                             float: left;
-                             position: relative;
-                             margin-left: 80px;
-                             margin-right: 35px;
-                             width: 274px;
-                             height: 276px;
-                             .ys-li-div {
-                                 position: absolute;
-                                 top: 46px;
-                                 left: 0;
-                                 text-align: center;
-                                 width: 100%;
-                                 .ys-img {
-                                     position: relative;
-                                     text-align: center;
-                                     @mixin box {
-                                         display: inline-block;
-                                         width: 100%;
-                                         height: 80px;
-                                         background: {
-                                             position: center center;
-                                             repeat: no-repeat;
-                                         }
-                                     }
-                                     .zuanshi {
-                                         @include box;
-                                         background: {
-                                             image: url(../images/zuanshi.png);
-                                         }
-                                     }
-                                     .zuan {
-                                         position: absolute;
-                                         z-index: -10;
-                                         display: none;
-                                         top: 0;
-                                         left: 0;
-                                         @include box;
-                                         background: {
-                                             image: url(../images/pzuanshi.png);
-                                         }
-                                     }
-                                     .shandian {
-                                         @include box;
-                                         background: {
-                                             image: url(../images/shandian.png);
-                                         }
-                                     }
-                                     .shan {
-                                         position: absolute;
-                                         z-index: -99;
-                                         top: 0;
-                                         left: 0;
-                                         @include box;
-                                         background: {
-                                             image: url(../images/pshandian.png);
-                                         }
-                                     }
-                                     .baozhang {
-                                         @include box;
-                                         background: {
-                                             image: url(../images/baozhang.png);
-                                         }
-                                     }
-                                     .bao {
-                                         position: absolute;
-                                         z-index: -99;
-                                         top: 0;
-                                         left: 0;
-                                         @include box;
-                                         background: {
-                                             image: url(../images/bao.png);
-                                         }
-                                     }
-                                 }
-                                 .line-border {
-                                     height: 44px;
-                                     i {
-                                         display: inline-block;
-                                         width: 20px;
-                                         height: 2px;
-                                         background: #fff;
-                                     }
-                                 }
-                                 .ys-title {
-                                     font-size: 24px;
-                                     line-height: 44px;
-                                     color: #fff;
-                                     font-family: 'Microsoft YaHei';
-                                     font-weight: 400;
-                                 }
-                                 .ys-hover {
-                                     /* display: none; */
-                                     opacity: 0;
-                                     color: #000;
-                                     padding-top: 10px;
-                                     font-size: 18px;
-                                     font-family: 'Microsoft YaHei';
-                                     line-height: 30px;
-                                 }
-                                 .lanse {
-                                     position: absolute;
-                                     top: -46px;
-                                     left: 0;
-                                     z-index: -99;
-                                 }
-                             }
-                             &:hover {
-                                 .ys-hover {
-                                     color: #fff;
-                                     font-size: 20px;
-                                     opacity: 1;
-                                 }
-                                 .zuan {
-                                     /*  display: block; */
-                                 }
-                                 .line-border {
-                                     display: none;
-                                 }
-                             }
-                         }
-                     }
-                 }
+            h3 {
+                width: 354px;
+                height: 45px;
+                line-height: 45px;
+                font-size: 16px;
+                font-family: 'Microsoft YaHei';
+                font-weight: 500;
+                background-color: #fff;
+                span:first-child {
+                    float: left;
+                    font-size: 16px;
+                    font-weight: 500;
+                    font-family: 'Microsoft YaHei';
+                    padding-left: 10px;
+                }
+                span:nth-child(2) {
+                    float: right;
+                    margin-right: 10px;
+                    color: #377fed;
+                    font-size: 14px;
+                    font-family: 'Microsoft YaHei';
+                }
+            }
+            &:hover .spanone {
+                color: #377fed;
+            }
+            &:hover img {
+                transform: scale(1.1, 1.1);
+                transition: (all 0.5s ease);
+            }
+            &:hover .drop {
+                display: block;
+            }
+        }
+    }
+    .section-widget {
+        width: 100%;
+        height: 276px;
+        margin-top: 80px;
+        background: {
+            image: url(../images/heise.png);
+            size: 100% 276px;
+            repeat: no-repeat;
+        } //中间蓝色图片展示
+        ul {
+            width: 1200px;
+            height: 276px;
+            margin: 0 auto;
+            li {
+                float: left;
+                position: relative;
+                margin-left: 80px;
+                margin-right: 35px;
+                width: 274px;
+                height: 276px;
+                .ys-li-div {
+                    position: absolute;
+                    top: 46px;
+                    left: 0;
+                    text-align: center;
+                    width: 100%;
+                    .ys-img {
+                        position: relative;
+                        text-align: center;
+                        @mixin box {
+                            display: inline-block;
+                            width: 100%;
+                            height: 80px;
+                            background: {
+                                position: center center;
+                                repeat: no-repeat;
+                            }
+                        }
+                        .zuanshi {
+                            @include box;
+                            background: {
+                                image: url(../images/zuanshi.png);
+                            }
+                        }
+                        .zuan {
+                            position: absolute;
+                            z-index: -10;
+                            display: none;
+                            top: 0;
+                            left: 0;
+                            @include box;
+                            background: {
+                                image: url(../images/pzuanshi.png);
+                            }
+                        }
+                        .shandian {
+                            @include box;
+                            background: {
+                                image: url(../images/shandian.png);
+                            }
+                        }
+                        .shan {
+                            position: absolute;
+                            z-index: -99;
+                            top: 0;
+                            left: 0;
+                            @include box;
+                            background: {
+                                image: url(../images/pshandian.png);
+                            }
+                        }
+                        .baozhang {
+                            @include box;
+                            background: {
+                                image: url(../images/baozhang.png);
+                            }
+                        }
+                        .bao {
+                            position: absolute;
+                            z-index: -99;
+                            top: 0;
+                            left: 0;
+                            @include box;
+                            background: {
+                                image: url(../images/bao.png);
+                            }
+                        }
+                    }
+                    .line-border {
+                        height: 44px;
+                        i {
+                            display: inline-block;
+                            width: 20px;
+                            height: 2px;
+                            background: #fff;
+                        }
+                    }
+                    .ys-title {
+                        font-size: 24px;
+                        line-height: 44px;
+                        color: #fff;
+                        font-family: 'Microsoft YaHei';
+                        font-weight: 400;
+                    }
+                    .ys-hover {
+                        /* display: none; */
+                        opacity: 0;
+                        color: #000;
+                        padding-top: 10px;
+                        font-size: 18px;
+                        font-family: 'Microsoft YaHei';
+                        line-height: 30px;
+                    }
+                    .lanse {
+                        position: absolute;
+                        top: -46px;
+                        left: 0;
+                        z-index: -99;
+                    }
+                }
+                &:hover {
+                    .ys-hover {
+                        color: #fff;
+                        font-size: 20px;
+                        opacity: 1;
+                    }
+                    .zuan {
+                        /*  display: block; */
+                    }
+                    .line-border {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
 
-                 .section-list {
-                     width: 100%;
-                     height: 677px;
-                     h2 {
-                         height: 70px;
-                         padding-top: 68px;
-                         font-weight: 100;
-                         font-size: 40px;
-                         text-align: center;
-                         font-family: 'Microsoft YaHei';
-                     } //中间二级菜单部分
-                     .list-name {
-                         margin: 25px auto 7px;
-                         text-align: center;
-                         li {
-                             position: relative;
-                             width: 80px;
-                             height: 26px;
-                             line-height: 26px;
-                             background-color: #4380ff;
-                             display: inline-block;
-                             margin-right: 5px;
-                             &:hover {
-                                 background-color: #4380ff;
-                             }
-                             &:hover a {
-                                 color: #FFF;
-                             }
-                             &:hover ::after {
-                                 display: none;
-                             }
-                             a {
-                                 color: #FFF;
-                                 font-size: 14px;
-                                 font-family: "Microsoft YaHei"
-                             }
-                             &::after {
-                                 //display: none;
-                                 position: absolute;
-                                 bottom: -15px;
-                                 left: 32px;
-                                 content: "";
-                                 border: 8px solid transparent;
-                                 border-top-color: #4380ff;
-                                 /* border-top-color: #f3f4ff; */
-                             }
-                         }
-                     }
-                     .showmore {
-                         @include showmore;
-                     }
-                     .list-main {
-                         width: 1200px;
-                         height: 416px;
-                         margin: 0 auto;
-                         display: flex;
-                         justify-content: center;
-                         .service {
-                             width: 369px;
-                             height: 380px;
-                             float: left;
-                             padding: 20px 28px 0 30px;
-                             margin-left: 5px;
-                             margin-right: 10px;
-                             margin-bottom: 15px;
-                             box-sizing: border-box;
-                             border: 1px solid #eaeaea;
-                             background-color: #fff;
-                             &:hover {
-                                 box-shadow: 0 6px 12px rgba(0, 0, 0, .1);
-                                 transition: all .6s cubic-bezier(0.4, 0, .2, 1);
-                             }
-                             @mixin serv {
-                                 width: 309px;
-                                 margin: 0 auto;
-                             }
-                             .service-info {
-                                 @include serv;
-                                 height: 142px;
-                                 border-bottom: 1px solid #ddd;
-                                 .info-img {
-                                     display: inline-block;
-                                     font-size: 0;
-                                     float: left;
-                                     border: 1px solid #b5b4b5;
-                                     border-radius: 1px;
-                                     outline: 0;
-                                 }
-                                 .info-text {
-                                     overflow: hidden;
-                                     width: 180px;
-                                     height: 42px;
-                                     line-height: 21px;
-                                     font-weight: 700;
-                                     font-size: 14px;
-                                     font-family: "Microsoft YaHei";
-                                     float: right;
-                                 }
-                                 .info-price {
-                                     overflow: hidden;
-                                     width: 180px;
-                                     height: 27px;
-                                     line-height: 27px;
-                                     margin: 14px 0;
-                                     font-size: 18px;
-                                     font-weight: 700;
-                                     color: #fc5c2a;
-                                     font-family: "Microsoft YaHei";
-                                     white-space: nowrap;
-                                     float: right;
-                                 }
-                                 .info-shi {
-                                     width: 180px;
-                                     height: 21px;
-                                     text-decoration: line-through;
-                                     color: #bfbfbf;
-                                     float: right;
-                                 }
-                             }
-                             .service-tag {
-                                 @include serv;
-                                 height: 60px;
-                                 a {
-                                     display: inline-block;
-                                     margin: 20px 10px 16px 0;
-                                     width: 70px;
-                                     height: 24px;
-                                     font-size: 12px;
-                                     font-family: "Microsoft YaHei";
-                                     line-height: 24px;
-                                     box-sizing: border-box;
-                                     border: 1px solid #d4daeb;
-                                     text-align: center;
-                                     color: #8994b7;
-                                     overflow: hidden;
-                                 }
-                             }
-                             .service-item {
-                                 @include serv;
-                                 height: 50px;
-                                 overflow: hidden;
-                                 line-height: 1.8;
-                                 color: #8e8e8e;
-                                 font-family: "Microsoft YaHei";
-                                 font-size: 14px;
-                                 padding-bottom: 15px;
-                                 border-bottom: 1px solid #ddd;
-                             }
-                             @mixin zixun {
-                                 display: inline-block;
-                                 width: 143px;
-                                 height: 44px;
-                                 line-height: 44px;
-                                 box-sizing: border-box;
-                                 font-size: 16px;
-                                 font-family: "Microsoft YaHei";
-                                 text-align: center;
-                                 color: #8097ec;
-                                 border: 1px solid #476be5;
-                             }
-                             .service-zixun {
-                                 @include serv;
-                                 height: 45px;
-                                 padding-top: 22px;
-                                 .firsta {
-                                     @include zixun;
-                                     margin-right: 16px;
-                                     float: left;
-                                     &:hover {
-                                         background-color: #476be5;
-                                     }
-                                 }
-                                 .twoa {
-                                     @include zixun;
-                                     background-color: #4380FF;
-                                     color: #FFF;
-                                     float: right;
-                                     &:hover {
-                                         background-color: #476be5;
-                                     }
-                                 }
-                             }
-                         }
-                     }
-                 }
-                 .section-programe {
-                     position: relative;
-                     overflow: hidden;
-                     width: 100%;
-                     height: 916px;
-                     background: -webkit-linear-gradient(left, #314FD0, #3B9CFF);
-                     .programe-title {
-                         @include title;
-                         height: 104px;
-                         h2 {
-                             color: #fff;
-                         }
-                         P {
-                             color: rgba(255, 255, 255, .7);
-                         }
-                     }
-                     .left {
-                         @include left;
-                         &:hover {
-                             background-color: #476be5;
-                         }
-                     }
-                     .right {
-                         @include right;
-                         &:hover {
-                             background-color: #476be5;
-                         }
-                     }
-                     .showmore {
-                         @include showmore;
-                         padding-bottom: 10px;
-                         a {
-                             color: #FFF;
-                         }
-                     }
-                     .lunbo {
-                         overflow: hidden;
-                         position: relative;
-                         width: 1134px;
-                         height: 676px;
-                         margin: 0 auto;
-                         .lunbo-body {
-                             width: 4000px;
-                             &>li {
-                                 float: left;
-                             }
-                         }
-                     }
-                     .programe-main {
-                         width: 1134px;
-                         height: 676px;
-                         margin: 0 auto;
-                         li:first-child {
-                             margin-right: 9px;
-                         }
-                         li:nth-child(2) {
-                             margin-left: 9px;
-                         }
-                         li:nth-child(3) {
-                             margin-right: 9px;
-                         }
-                         li:nth-child(4) {
-                             margin-left: 9px;
-                         }
-                         .main-lunbo {
-                             position: relative;
-                             width: 558px;
-                             height: 300px;
-                             background-color: #fff;
-                             padding: 20px 0 18px 24px;
-                             box-sizing: border-box;
-                             /*  margin-right: 9px; */
-                             margin-bottom: 16px;
-                             float: left;
-                             .lunbo-left {
-                                 position: relative;
-                                 float: left;
-                                 width: 172px;
-                                 height: 262px;
-                                 margin-right: 24px;
-                                 .lunbo-pic {
-                                     border: 1px solid #eaeaea;
-                                 }
-                                 @mixin num {
-                                     float: left;
-                                     text-align: center;
-                                     font-family: "Microsoft YaHei";
-                                     margin-top: 24px;
-                                     em {
-                                         color: #fc5c2a;
-                                         display: block;
-                                         font-size: 20px;
-                                         line-height: 30px;
-                                         overflow: hidden;
-                                     }
-                                     span {
-                                         font-size: 13px;
-                                     }
-                                 }
-                                 .lunbo-num {
-                                     @include num;
-                                     width: 44%;
-                                 }
-                                 .lunbo-price {
-                                     @include num;
-                                     width: 56%;
-                                 }
-                             }
-                             @mixin right {
-                                 width: 304px;
-                                 font-family: "Microsoft YaHei";
-                             }
-                             .lunbo-right {
-                                 float: left;
-                                 width: 304px;
-                                 height: 251px;
-                                 .right-name {
-                                     @include right;
-                                     height: 40px;
-                                     em {
-                                         font-size: 14px;
-                                         color: #333;
-                                         font-weight: 700;
-                                         overflow: hidden;
-                                         max-width: 208px;
-                                         text-overflow: ellipsis;
-                                         white-space: nowrap;
-                                         float: left;
-                                     }
-                                     span {
-                                         padding-right: 10px;
-                                         font-size: 13px;
-                                         color: #8a8a8a;
-                                         position: relative;
-                                         top: 2px;
-                                         overflow: hidden;
-                                         max-width: 96px;
-                                         box-sizing: border-box;
-                                         white-space: nowrap;
-                                         float: right;
-                                     }
-                                 }
-                                 .right-list {
-                                     @include right;
-                                     position: relative;
-                                     height: 52px;
-                                     border-bottom: 1px solid #eee;
-                                     .list-label {
-                                         position: absolute;
-                                         bottom: -10px;
-                                         left: 104px;
-                                         width: 108px;
-                                         height: 21px;
-                                         color: #999;
-                                         background-color: #fff;
-                                         font-size: 14px;
-                                         text-align: center;
-                                     }
-                                     .list-a {
-                                         float: left;
-                                         font-size: 12px;
-                                         height: 24px;
-                                         line-height: 24px;
-                                         padding: 0 6px;
-                                         color: #8994b7;
-                                         border: 1px solid #d4d9eb;
-                                         margin-right: 10px;
-                                         overflow: hidden;
-                                         white-space: nowrap;
-                                         max-width: 80px;
-                                     }
-                                 }
-                                 .right-logo {
-                                     width: 281px;
-                                     height: 40px;
-                                     margin-bottom: 26px;
-                                     line-height: 40px;
-                                     padding: 26px 0 22px 23px;
-                                     border-bottom: 1px solid #eee;
-                                     img {
-                                         width: 108px;
-                                         height: 38px;
-                                         margin-right: 20px;
-                                     }
-                                 }
-                                 .service-zixun {
-                                     @include right;
+    .section-list {
+        width: 100%;
+        height: 677px;
+        h2 {
+            height: 70px;
+            padding-top: 68px;
+            font-weight: 100;
+            font-size: 40px;
+            text-align: center;
+            font-family: 'Microsoft YaHei';
+        } //中间二级菜单部分
+        .list-name {
+            margin: 25px auto 7px;
+            text-align: center;
+            li {
+                position: relative;
+                width: 80px;
+                height: 26px;
+                line-height: 26px;
+                background-color: #4380ff;
+                display: inline-block;
+                margin-right: 5px;
+                &:hover {
+                    background-color: #4380ff;
+                }
+                &:hover a {
+                    color: #FFF;
+                }
+                &:hover ::after {
+                    display: none;
+                }
+                a {
+                    color: #FFF;
+                    font-size: 14px;
+                    font-family: "Microsoft YaHei"
+                }
+                &::after {
+                    //display: none;
+                    position: absolute;
+                    bottom: -15px;
+                    left: 32px;
+                    content: "";
+                    border: 8px solid transparent;
+                    border-top-color: #4380ff;
+                    /* border-top-color: #f3f4ff; */
+                }
+            }
+        }
+        .showmore {
+            @include showmore;
+        }
+        .list-main {
+            width: 1200px;
+            height: 416px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            .service {
+                width: 369px;
+                height: 380px;
+                float: left;
+                padding: 20px 28px 0 30px;
+                margin-left: 5px;
+                margin-right: 10px;
+                margin-bottom: 15px;
+                box-sizing: border-box;
+                border: 1px solid #eaeaea;
+                background-color: #fff;
+                &:hover {
+                    box-shadow: 0 6px 12px rgba(0, 0, 0, .1);
+                    transition: all .6s cubic-bezier(0.4, 0, .2, 1);
+                }
+                @mixin serv {
+                    width: 309px;
+                    margin: 0 auto;
+                }
+                .service-info {
+                    @include serv;
+                    height: 142px;
+                    border-bottom: 1px solid #ddd;
+                    .info-img {
+                        display: inline-block;
+                        font-size: 0;
+                        float: left;
+                        border: 1px solid #b5b4b5;
+                        border-radius: 1px;
+                        outline: 0;
+                    }
+                    .info-text {
+                        overflow: hidden;
+                        width: 180px;
+                        height: 42px;
+                        line-height: 21px;
+                        font-weight: 700;
+                        font-size: 14px;
+                        font-family: "Microsoft YaHei";
+                        float: right;
+                    }
+                    .info-price {
+                        overflow: hidden;
+                        width: 180px;
+                        height: 27px;
+                        line-height: 27px;
+                        margin: 14px 0;
+                        font-size: 18px;
+                        font-weight: 700;
+                        color: #fc5c2a;
+                        font-family: "Microsoft YaHei";
+                        white-space: nowrap;
+                        float: right;
+                    }
+                    .info-shi {
+                        width: 180px;
+                        height: 21px;
+                        text-decoration: line-through;
+                        color: #bfbfbf;
+                        float: right;
+                    }
+                }
+                .service-tag {
+                    @include serv;
+                    height: 60px;
+                    a {
+                        display: inline-block;
+                        margin: 20px 10px 16px 0;
+                        width: 70px;
+                        height: 24px;
+                        font-size: 12px;
+                        font-family: "Microsoft YaHei";
+                        line-height: 24px;
+                        box-sizing: border-box;
+                        border: 1px solid #d4daeb;
+                        text-align: center;
+                        color: #8994b7;
+                        overflow: hidden;
+                    }
+                }
+                .service-item {
+                    @include serv;
+                    height: 50px;
+                    overflow: hidden;
+                    line-height: 1.8;
+                    color: #8e8e8e;
+                    font-family: "Microsoft YaHei";
+                    font-size: 14px;
+                    padding-bottom: 15px;
+                    border-bottom: 1px solid #ddd;
+                }
+                @mixin zixun {
+                    display: inline-block;
+                    width: 143px;
+                    height: 44px;
+                    line-height: 44px;
+                    box-sizing: border-box;
+                    font-size: 16px;
+                    font-family: "Microsoft YaHei";
+                    text-align: center;
+                    color: #8097ec;
+                    border: 1px solid #476be5;
+                }
+                .service-zixun {
+                    @include serv;
+                    height: 45px;
+                    padding-top: 22px;
+                    .firsta {
+                        @include zixun;
+                        margin-right: 16px;
+                        float: left;
+                        &:hover {
+                            background-color: #476be5;
+                        }
+                    }
+                    .twoa {
+                        @include zixun;
+                        background-color: #4380FF;
+                        color: #FFF;
+                        float: right;
+                        &:hover {
+                            background-color: #476be5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .section-programe {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 916px;
+        background: -webkit-linear-gradient(left, #314FD0, #3B9CFF);
+        .programe-title {
+            @include title;
+            height: 104px;
+            h2 {
+                color: #fff;
+            }
+            P {
+                color: rgba(255, 255, 255, .7);
+            }
+        }
+        .left {
+            @include left;
+            &:hover {
+                background-color: #476be5;
+            }
+        }
+        .right {
+            @include right;
+            &:hover {
+                background-color: #476be5;
+            }
+        }
+        .showmore {
+            @include showmore;
+            padding-bottom: 10px;
+            a {
+                color: #FFF;
+            }
+        }
+        .lunbo {
+            overflow: hidden;
+            position: relative;
+            width: 1134px;
+            height: 676px;
+            margin: 0 auto;
+            .lunbo-body {
+                width: 4000px;
+                &>li {
+                    float: left;
+                }
+            }
+        }
+        .programe-main {
+            width: 1134px;
+            height: 676px;
+            margin: 0 auto;
+            li:first-child {
+                margin-right: 9px;
+            }
+            li:nth-child(2) {
+                margin-left: 9px;
+            }
+            li:nth-child(3) {
+                margin-right: 9px;
+            }
+            li:nth-child(4) {
+                margin-left: 9px;
+            }
+            .main-lunbo {
+                position: relative;
+                width: 558px;
+                height: 300px;
+                background-color: #fff;
+                padding: 20px 0 18px 24px;
+                box-sizing: border-box;
+                /*  margin-right: 9px; */
+                margin-bottom: 16px;
+                float: left;
+                .lunbo-left {
+                    position: relative;
+                    float: left;
+                    width: 172px;
+                    height: 262px;
+                    margin-right: 24px;
+                    .lunbo-pic {
+                        border: 1px solid #eaeaea;
+                    }
+                    @mixin num {
+                        float: left;
+                        text-align: center;
+                        font-family: "Microsoft YaHei";
+                        margin-top: 24px;
+                        em {
+                            color: #fc5c2a;
+                            display: block;
+                            font-size: 20px;
+                            line-height: 30px;
+                            overflow: hidden;
+                        }
+                        span {
+                            font-size: 13px;
+                        }
+                    }
+                    .lunbo-num {
+                        @include num;
+                        width: 44%;
+                    }
+                    .lunbo-price {
+                        @include num;
+                        width: 56%;
+                    }
+                }
+                @mixin right {
+                    width: 304px;
+                    font-family: "Microsoft YaHei";
+                }
+                .lunbo-right {
+                    float: left;
+                    width: 304px;
+                    height: 251px;
+                    .right-name {
+                        @include right;
+                        height: 40px;
+                        em {
+                            font-size: 14px;
+                            color: #333;
+                            font-weight: 700;
+                            overflow: hidden;
+                            max-width: 208px;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            float: left;
+                        }
+                        span {
+                            padding-right: 10px;
+                            font-size: 13px;
+                            color: #8a8a8a;
+                            position: relative;
+                            top: 2px;
+                            overflow: hidden;
+                            max-width: 96px;
+                            box-sizing: border-box;
+                            white-space: nowrap;
+                            float: right;
+                        }
+                    }
+                    .right-list {
+                        @include right;
+                        position: relative;
+                        height: 52px;
+                        border-bottom: 1px solid #eee;
+                        .list-label {
+                            position: absolute;
+                            bottom: -10px;
+                            left: 104px;
+                            width: 108px;
+                            height: 21px;
+                            color: #999;
+                            background-color: #fff;
+                            font-size: 14px;
+                            text-align: center;
+                        }
+                        .list-a {
+                            float: left;
+                            font-size: 12px;
+                            height: 24px;
+                            line-height: 24px;
+                            padding: 0 6px;
+                            color: #8994b7;
+                            border: 1px solid #d4d9eb;
+                            margin-right: 10px;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            max-width: 80px;
+                        }
+                    }
+                    .right-logo {
+                        width: 281px;
+                        height: 40px;
+                        margin-bottom: 26px;
+                        line-height: 40px;
+                        padding: 26px 0 22px 23px;
+                        border-bottom: 1px solid #eee;
+                        img {
+                            width: 108px;
+                            height: 38px;
+                            margin-right: 20px;
+                        }
+                    }
+                    .service-zixun {
+                        @include right;
 
-                                     .firsta {
-                                         width: 142px;
-                                         height: 42px;
-                                         line-height: 42px;
-                                         text-align: center;
-                                         font-size: 16px;
-                                         margin-right: 14px;
-                                         border: 1px solid #476be5;
-                                         box-sizing: border-box;
-                                         float: left;
-                                         &:hover {
-                                             background-color: #476be5;
-                                         }
-                                     }
-                                     .twoa {
-                                         width: 142px;
-                                         height: 42px;
-                                         line-height: 42px;
-                                         text-align: center;
-                                         font-size: 16px;
-                                         background-color: #4380FF;
-                                         box-sizing: border-box;
-                                         color: #FFF;
-                                         float: right;
-                                         &:hover {
-                                             background-color: #476be5;
-                                         }
-                                     }
-                                 }
-                             }
-                         }
-                     } //轮播图下面的小点
-                     .lunbo-index {
-                         position: absolute;
-                         bottom: 0;
-                         left: 556px;
-                         margin: 0 auto;
-                         text-align: center;
-                         line-height: 21px;
-                         li {
-                             text-align: center;
-                             float: left;
-                             width: 6px;
-                             height: 6px;
-                             margin-right: 10px;
-                             background-color: #fff;
-                         }
-                     }
-                 }
-                 .programe-title {
-                     @include title;
-                     height: 104px;
-                 }
-                 .section-zhitongche {
-                     position: relative;
-                     width: 1134px;
-                     height: 628px;
-                     margin: 0 auto;
-                     margin-bottom: 50px;
-                     .tuijian {
-                         width: 1134px;
-                         height: 628px;
-                         background-color: #d9dbed;
-                         margin-bottom: 50px;
-                         .title {
-                             position: relative;
-                             width: 100%;
-                             height: 110px;
-                             box-sizing: border-box;
-                             font-size: 0;
-                             background-color: #4380ff;
-                             padding-top: 10px;
-                             i {
-                                 display: inline-block;
-                                 margin-left: 44px;
-                                 width: 106px;
-                                 background-repeat: no-repeat;
-                                 margin-right: 30px;
-                                 height: 100px;
-                                 float: left;
-                                 background: {
-                                     image: url(../images/hh.png);
-                                 }
-                             }
-                             .ier {
-                                 display: inline-block;
-                                 margin-left: 44px;
-                                 width: 106px;
-                                 background-repeat: no-repeat;
-                                 margin-right: 30px;
-                                 height: 100px;
-                                 float: left;
-                                 background: {
-                                     image: url(../images/jj.png);
-                                 }
-                             }
-                             .text {
-                                 float: left;
-                                 strong {
+                        .firsta {
+                            width: 142px;
+                            height: 42px;
+                            line-height: 42px;
+                            text-align: center;
+                            font-size: 16px;
+                            margin-right: 14px;
+                            border: 1px solid #476be5;
+                            box-sizing: border-box;
+                            float: left;
+                            &:hover {
+                                background-color: #476be5;
+                            }
+                        }
+                        .twoa {
+                            width: 142px;
+                            height: 42px;
+                            line-height: 42px;
+                            text-align: center;
+                            font-size: 16px;
+                            background-color: #4380FF;
+                            box-sizing: border-box;
+                            color: #FFF;
+                            float: right;
+                            &:hover {
+                                background-color: #476be5;
+                            }
+                        }
+                    }
+                }
+            }
+        } //轮播图下面的小点
+        .lunbo-index {
+            position: absolute;
+            bottom: 0;
+            left: 556px;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 21px;
+            li {
+                text-align: center;
+                float: left;
+                width: 6px;
+                height: 6px;
+                margin-right: 10px;
+                background-color: #fff;
+            }
+        }
+    }
+    .programe-title {
+        @include title;
+        height: 104px;
+    }
+    .section-zhitongche {
+        position: relative;
+        width: 1134px;
+        height: 628px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        .tuijian {
+            width: 1134px;
+            height: 628px;
+            background-color: #d9dbed;
+            margin-bottom: 50px;
+            .title {
+                position: relative;
+                width: 100%;
+                height: 110px;
+                box-sizing: border-box;
+                font-size: 0;
+                background-color: #4380ff;
+                padding-top: 10px;
+                i {
+                    display: inline-block;
+                    margin-left: 44px;
+                    width: 106px;
+                    background-repeat: no-repeat;
+                    margin-right: 30px;
+                    height: 100px;
+                    float: left;
+                    background: {
+                        image: url(../images/hh.png);
+                    }
+                }
+                .ier {
+                    display: inline-block;
+                    margin-left: 44px;
+                    width: 106px;
+                    background-repeat: no-repeat;
+                    margin-right: 30px;
+                    height: 100px;
+                    float: left;
+                    background: {
+                        image: url(../images/jj.png);
+                    }
+                }
+                .text {
+                    float: left;
+                    strong {
 
-                                     font-size: 28px;
-                                     font-weight: 400;
-                                     font-family: "Microsoft YaHei";
-                                     color: #fff;
-                                     padding: 20px 40px 15px 0;
-                                     display: block;
-                                 }
-                                 span {
-                                     display: block;
-                                     font-size: 18px;
-                                     font-family: "Microsoft YaHei";
-                                     color: rgba(255, 255, 255, .7);
-                                 }
-                             }
+                        font-size: 28px;
+                        font-weight: 400;
+                        font-family: "Microsoft YaHei";
+                        color: #fff;
+                        padding: 20px 40px 15px 0;
+                        display: block;
+                    }
+                    span {
+                        display: block;
+                        font-size: 18px;
+                        font-family: "Microsoft YaHei";
+                        color: rgba(255, 255, 255, .7);
+                    }
+                }
 
-                             a {
-                                 display: block;
-                                 float: right;
-                                 font-size: 16px;
-                                 font-family: "Microsoft YaHei";
-                                 color: #fff;
-                                 margin-top: 34px;
-                                 padding-right: 24px;
-                             }
-                         }
-                         .pic {
-                             position: relative;
-                             width: 1134px;
-                             height: 518px;
-                             .pic-top {
-                                 overflow: hidden;
-                                 width: 1110px;
-                                 height: 440;
-                                 margin-top: 28px;
-                                 padding-bottom: 10px;
-                                 ul {
-                                     width: 4000px;
-                                     margin-left: 24px;
-                                 }
-                                 li {
-                                     position: relative;
-                                     width: 202px;
-                                     background-color: #fff;
-                                     float: left;
-                                     color: #333;
-                                     padding: 20px 26px 30px;
-                                     margin-right: 24px;
-                                     img {
-                                         width: 200px;
-                                         height: 200px;
-                                     }
-                                     p {
-                                         width: 202px;
-                                         height: 27px;
-                                         padding-top: 8px;
-                                         color: #ff5858;
-                                         font-size: 18px;
-                                         font-weight: 800;
-                                         font-family: "Microsoft YaHei";
-                                     }
-                                     h5 {
-                                         overflow: hidden;
-                                         padding-top: 10px;
-                                         height: 58px;
-                                         font-size: 14px;
-                                         line-height: 26px;
-                                         font-weight: 100;
-                                         font-family: "Microsoft YaHei";
-                                         box-sizing: border-box;
-                                     }
-                                     .has-buy {
-                                         padding-bottom: 10px;
-                                         padding-top: 13px;
-                                         font-size: 14px;
-                                         margin-bottom: 14px;
-                                         display: inline-block;
-                                         text-align: center;
-                                         span {
-                                             color: #476be5;
-                                             background-color: #fff;
-                                             font-size: 20px;
-                                             font-weight: 800;
-                                             padding-left: 8px;
-                                             text-align: center;
-                                         }
-                                         em {
-                                             background-color: #fff;
-                                             padding-right: 4px;
-                                             text-align: center;
-                                             font-size: 14px;
-                                             color: #999;
-                                             font-family: "Microsoft YaHei";
-                                         }
-                                         i {
-                                             display: inline-block;
-                                             margin-bottom: 5px;
-                                             width: 32px;
-                                             height: 1px;
-                                             background-color: #999;
-                                             font-family: "Microsoft YaHei";
-                                         }
-                                     }
-                                     .service-zixun {
-                                         .firsta {
-                                             width: 90px;
-                                             height: 38px;
-                                             line-height: 38px;
-                                             text-align: center;
-                                             font-size: 16px;
-                                             margin-right: 14px;
-                                             border: 1px solid #476be5;
-                                             box-sizing: border-box;
-                                             float: left;
-                                             &:hover {
-                                                 background-color: #476be5;
-                                             }
-                                         }
-                                         .twoa {
-                                             width: 90px;
-                                             height: 38px;
-                                             line-height: 38px;
-                                             text-align: center;
-                                             font-size: 16px;
-                                             background-color: #4380FF;
-                                             box-sizing: border-box;
-                                             color: #FFF;
-                                             float: right;
-                                             &:hover {
-                                                 background-color: #476be5;
-                                             }
-                                         }
-                                     }
-                                 }
-                             }
-                             .lunbo-index {
-                                 position: absolute;
-                                 bottom: 50px;
-                                 left: 556px;
-                                 margin: 0 auto;
-                                 text-align: center;
-                                 line-height: 21px;
-                                 li {
-                                     text-align: center;
-                                     float: left;
-                                     width: 6px;
-                                     height: 6px;
-                                     margin-right: 10px;
-                                     background-color: #fff;
-                                 }
-                             }
-                         }
-                     }
-                     .left {
-                         @include left;
-                         left: -60px;
-                         top: 326px;
-                         background-color: #AEBDF5;
-                         &:hover {
-                             background-color: #476be5;
-                         }
-                     }
-                     .right {
-                         @include right;
-                         background-color: #AEBDF5;
-                         right: -60px;
-                         top: 326px;
-                         &:hover {
-                             background-color: #476be5;
-                         }
-                     }
-                 }
-                 .section-lcbz {
-                     position: relative;
-                     width: 100%;
-                     height: 461px;
-                     background: {
-                         image: url(../images/heise1.png);
-                     }
-                     .programe-title {
-                         @include title;
-                         h2 {
-                             padding-top: 58px;
-                             color: #fff;
-                         }
-                     }
-                     .lcbz-pic {
-                         width: 912px;
-                         height: 137px;
-                         margin: 55px auto;
-                         overflow: hidden;
-                         .lcbz-lunbo {
-                             width: 4000px;
-                             img {
-                                 width: 912px;
-                                 float: left;
-                             }
-                         }
-                     }
-                     .lunbo-index {
-                         position: absolute;
-                         bottom: 50px;
-                         left: 49.5%;
-                         margin: 0 auto;
-                         text-align: center;
-                         line-height: 21px;
-                         li {
-                             text-align: center;
-                             float: left;
-                             width: 6px;
-                             height: 6px;
-                             margin-right: 10px;
-                             background-color: #FFF;
-                         }
-                     }
-                 }
-                 .section-wenti {
-                     width: 1094px;
-                     /* height: 659px; */
-                     margin: 40px auto;
-                     background-color: #FFF;
-                     border: 1px solid #c8c8c8;
-                     @mixin ziti {
-                         width: 936px;
-                         padding-top: 18px;
-                         border-bottom: 1px solid #e1e1e1;
-                         color: #333;
-                         font-size: 18px;
-                         font-family: "Microsoft YaHei";
-                     }
-                     @mixin dianji {
-                         width: 936px;
-                         line-height: 30px;
-                         color: #999;
-                         font-size: 18px;
-                         padding-top: 30px;
-                         font-family: "Microsoft YaHei";
-                     }
-                     @mixin one {
-                         width: 936px;
-                         margin: 0 auto;
-                         dt:first-child {
+                a {
+                    display: block;
+                    float: right;
+                    font-size: 16px;
+                    font-family: "Microsoft YaHei";
+                    color: #fff;
+                    margin-top: 34px;
+                    padding-right: 24px;
+                }
+            }
+            .pic {
+                position: relative;
+                width: 1134px;
+                height: 518px;
+                .pic-top {
+                    overflow: hidden;
+                    width: 1110px;
+                    height: 440;
+                    margin-top: 28px;
+                    padding-bottom: 10px;
+                    ul {
+                        width: 4000px;
+                        margin-left: 24px;
+                    }
+                    li {
+                        position: relative;
+                        width: 202px;
+                        background-color: #fff;
+                        float: left;
+                        color: #333;
+                        padding: 20px 26px 30px;
+                        margin-right: 24px;
+                        img {
+                            width: 200px;
+                            height: 200px;
+                        }
+                        p {
+                            width: 202px;
+                            height: 27px;
+                            padding-top: 8px;
+                            color: #ff5858;
+                            font-size: 18px;
+                            font-weight: 800;
+                            font-family: "Microsoft YaHei";
+                        }
+                        h5 {
+                            overflow: hidden;
+                            padding-top: 10px;
+                            height: 58px;
+                            font-size: 14px;
+                            line-height: 26px;
+                            font-weight: 100;
+                            font-family: "Microsoft YaHei";
+                            box-sizing: border-box;
+                        }
+                        .has-buy {
+                            padding-bottom: 10px;
+                            padding-top: 13px;
+                            font-size: 14px;
+                            margin-bottom: 14px;
+                            display: inline-block;
+                            text-align: center;
+                            span {
+                                color: #476be5;
+                                background-color: #fff;
+                                font-size: 20px;
+                                font-weight: 800;
+                                padding-left: 8px;
+                                text-align: center;
+                            }
+                            em {
+                                background-color: #fff;
+                                padding-right: 4px;
+                                text-align: center;
+                                font-size: 14px;
+                                color: #999;
+                                font-family: "Microsoft YaHei";
+                            }
+                            i {
+                                display: inline-block;
+                                margin-bottom: 5px;
+                                width: 32px;
+                                height: 1px;
+                                background-color: #999;
+                                font-family: "Microsoft YaHei";
+                            }
+                        }
+                        .service-zixun {
+                            .firsta {
+                                width: 90px;
+                                height: 38px;
+                                line-height: 38px;
+                                text-align: center;
+                                font-size: 16px;
+                                margin-right: 14px;
+                                border: 1px solid #476be5;
+                                box-sizing: border-box;
+                                float: left;
+                                &:hover {
+                                    background-color: #476be5;
+                                }
+                            }
+                            .twoa {
+                                width: 90px;
+                                height: 38px;
+                                line-height: 38px;
+                                text-align: center;
+                                font-size: 16px;
+                                background-color: #4380FF;
+                                box-sizing: border-box;
+                                color: #FFF;
+                                float: right;
+                                &:hover {
+                                    background-color: #476be5;
+                                }
+                            }
+                        }
+                    }
+                }
+                .lunbo-index {
+                    position: absolute;
+                    bottom: 50px;
+                    left: 556px;
+                    margin: 0 auto;
+                    text-align: center;
+                    line-height: 21px;
+                    li {
+                        text-align: center;
+                        float: left;
+                        width: 6px;
+                        height: 6px;
+                        margin-right: 10px;
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+        .left {
+            @include left;
+            left: -60px;
+            top: 326px;
+            background-color: #AEBDF5;
+            &:hover {
+                background-color: #476be5;
+            }
+        }
+        .right {
+            @include right;
+            background-color: #AEBDF5;
+            right: -60px;
+            top: 326px;
+            &:hover {
+                background-color: #476be5;
+            }
+        }
+    }
+    .section-lcbz {
+        position: relative;
+        width: 100%;
+        height: 461px;
+        background: {
+            image: url(../images/heise1.png);
+        }
+        .programe-title {
+            @include title;
+            h2 {
+                padding-top: 58px;
+                color: #fff;
+            }
+        }
+        .lcbz-pic {
+            width: 912px;
+            height: 137px;
+            margin: 55px auto;
+            overflow: hidden;
+            .lcbz-lunbo {
+                width: 4000px;
+                img {
+                    width: 912px;
+                    float: left;
+                }
+            }
+        }
+        .lunbo-index {
+            position: absolute;
+            bottom: 50px;
+            left: 49.5%;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 21px;
+            li {
+                text-align: center;
+                float: left;
+                width: 6px;
+                height: 6px;
+                margin-right: 10px;
+                background-color: #FFF;
+            }
+        }
+    }
+    .section-wenti {
+        width: 1094px;
+        /* height: 659px; */
+        margin: 40px auto;
+        background-color: #FFF;
+        border: 1px solid #c8c8c8;
+        @mixin ziti {
+            width: 936px;
+            padding-top: 18px;
+            border-bottom: 1px solid #e1e1e1;
+            color: #333;
+            font-size: 18px;
+            font-family: "Microsoft YaHei";
+        }
+        @mixin dianji {
+            width: 936px;
+            line-height: 30px;
+            color: #999;
+            font-size: 18px;
+            padding-top: 30px;
+            font-family: "Microsoft YaHei";
+        }
+        @mixin one {
+            width: 936px;
+            margin: 0 auto;
+            dt:first-child {
 
-                             @include ziti;
-                             height: 80px;
-                             line-height: 80px;
-                             span:first-child {
-                                 float: left;
-                             }
-                             span:nth-child(2) {
-                                 float: right;
-                                 .iconfont {
-                                     color: #999;
-                                     font-size: 18px;
-                                 }
-                             }
-                         }
-                         dt:nth-child(2) {
-                             display: none;
-                             p {
-                                 @include dianji;
-                             }
-                         }
-                     }
-                     .one {
-                         @include one;
-                     }
-                     .two {
-                         @include one;
-                     }
-                     .three {
-                         @include one;
-                     }
-                     .four {
-                         @include one;
-                     }
-                     .five {
-                         @include one;
-                     }
-                 }
-                 .section-fuwu {
-                     width: 100%;
-                     height: 267px;
-                     background: {
-                         image: url(../images/beijing1.png);
-                     }
-                     .programe-title {
-                         @include title;
-                         h2 {
-                             padding-top: 58px;
-                             color: #fff;
-                         }
-                     }
-                     .fuwu-inp {
-                         @include inp;
-                     }
-                 }
-                 .section-bottom {
-                     width: 1200px;
-                     height: 150px;
-                     margin: 80px auto;
-                     img {
-                         float: left;
-                         margin-left: 34px;
-                     }
-                 }
-             }
+                @include ziti;
+                height: 80px;
+                line-height: 80px;
+                span:first-child {
+                    float: left;
+                }
+                span:nth-child(2) {
+                    float: right;
+                    .iconfont {
+                        color: #999;
+                        font-size: 18px;
+                    }
+                }
+            }
+            dt:nth-child(2) {
+                display: none;
+                p {
+                    @include dianji;
+                }
+            }
+        }
+        .one {
+            @include one;
+        }
+        .two {
+            @include one;
+        }
+        .three {
+            @include one;
+        }
+        .four {
+            @include one;
+        }
+        .five {
+            @include one;
+        }
+    }
+    .section-fuwu {
+        width: 100%;
+        height: 267px;
+        background: {
+            image: url(../images/beijing1.png);
+        }
+        .programe-title {
+            @include title;
+            h2 {
+                padding-top: 58px;
+                color: #fff;
+            }
+        }
+        .fuwu-inp {
+            @include inp;
+        }
+    }
+    .section-bottom {
+        width: 1200px;
+        height: 150px;
+        margin: 80px auto;
+        img {
+            float: left;
+            margin-left: 34px;
+        }
+    }
+}
 
-             #footer {
-                 width: 100%;
-                 height: 286px;
-                 color: #8a8a8a;
-                 font-family: "Microsoft YaHei";
-                 font-size: 14px;
-                 background-color: rgba(0, 0, 0, .9);
-                 .wrap {
-                     width: 1050px;
-                     height: 230px;
-                     padding-left: 150px;
-                     padding-top: 50px;
-                     margin: 0 auto;
-                     .footer-left {
-                         width: 270px;
-                         float: left;
-                         h6 {
-                             width: 244px;
-                             height: 40px;
-                             line-height: 40px;
-                             color: #bbb;
-                             font-size: 16px;
-                             font-weight: 800;
-                             font-family: "Microsoft YaHei";
-                         }
-                         .list {
-                             width: 270px;
-                             height: 120px;
-                             li {
-                                 line-height: 30px;
-                                 font-size: 14px;
-                             }
-                         }
-                     }
-                     .footer-center {
-                         width: 398px;
-                         text-align: center;
-                         float: left;
-                         .icon {
-                             width: 398px;
-                             height: 108px;
-                             font-size: 16px;
-                             line-height: 46px;
-                             padding-top: 52px;
-                             box-sizing: border-box;
-                             background: {
-                                 image: url(../images/logo.jpg);
-                                 repeat: no-repeat;
-                                 position: top center;
-                             }
-                         }
-                         p {
-                             line-height: 28px;
-                         }
-                     }
-                     .footer-right {
-                         width: 368px;
-                         padding-left: 130px;
-                         float: left;
-                         box-sizing: border-box;
-                         h6 {
-                             line-height: 40px;
-                             color: #bbb;
-                             font-size: 16px;
-                             font-weight: 800;
-                             width: 238px;
-                         }
-                         li {
-                             width: 238px;
-                             height: 30px;
-                             a {
-                                 color: #8a8a8a;
-                                 font-family: "Microsoft YaHei";
-                                 font-size: 14px;
-                                 padding-bottom: 1px;
-                                 &:hover {
-                                     color: #eb6b25;
-                                     border-bottom: 1px solid #eb6b25;
-                                 }
-                             }
-                         }
-                     }
-                 }
-             }
+#footer {
+    width: 100%;
+    height: 286px;
+    color: #8a8a8a;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, .9);
+    .wrap {
+        width: 1050px;
+        height: 230px;
+        padding-left: 150px;
+        padding-top: 50px;
+        margin: 0 auto;
+        .footer-left {
+            width: 270px;
+            float: left;
+            h6 {
+                width: 244px;
+                height: 40px;
+                line-height: 40px;
+                color: #bbb;
+                font-size: 16px;
+                font-weight: 800;
+                font-family: "Microsoft YaHei";
+            }
+            .list {
+                width: 270px;
+                height: 120px;
+                li {
+                    line-height: 30px;
+                    font-size: 14px;
+                }
+            }
+        }
+        .footer-center {
+            width: 398px;
+            text-align: center;
+            float: left;
+            .icon {
+                width: 398px;
+                height: 108px;
+                font-size: 16px;
+                line-height: 46px;
+                padding-top: 52px;
+                box-sizing: border-box;
+                background: {
+                    image: url(../images/logo.jpg);
+                    repeat: no-repeat;
+                    position: top center;
+                }
+            }
+            p {
+                line-height: 28px;
+            }
+        }
+        .footer-right {
+            width: 368px;
+            padding-left: 130px;
+            float: left;
+            box-sizing: border-box;
+            h6 {
+                line-height: 40px;
+                color: #bbb;
+                font-size: 16px;
+                font-weight: 800;
+                width: 238px;
+            }
+            li {
+                width: 238px;
+                height: 30px;
+                a {
+                    color: #8a8a8a;
+                    font-family: "Microsoft YaHei";
+                    font-size: 14px;
+                    padding-bottom: 1px;
+                    &:hover {
+                        color: #eb6b25;
+                        border-bottom: 1px solid #eb6b25;
+                    }
+                }
+            }
+        }
+    }
+}

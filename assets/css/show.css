@@ -136,6 +136,12 @@ ul {
   background-color: #ddd;
 }
 
+#header .picu {
+  width: 1190px;
+  text-align: center;
+  margin: 0 auto;
+}
+
 #header .header-center {
   width: 100%;
   height: 117px;
@@ -582,10 +588,14 @@ ul {
   height: 170px;
 }
 
+#section .active {
+  background-color: #f5f5f5;
+}
+
 #section .section-two {
-  position: relative;
   width: 1190px;
   margin: 0 auto;
+  position: relative;
 }
 
 #section .section-two .two-title {
@@ -603,20 +613,18 @@ ul {
   line-height: 38px;
   font-size: 16px;
   color: #f60;
+}
+
+#section .section-two .two-title .a {
   background-color: #f5f5f5;
 }
 
 #section .section-two .two-title .b {
-  float: left;
   width: 141px;
-  height: 38px;
   color: #333;
 }
 
 #section .section-two .two-content {
-  position: absolute;
-  top: 126px;
-  left: 0;
   overflow: hidden;
   width: 1190px;
   height: 445px;
@@ -712,5 +720,172 @@ ul {
 }
 
 #section .section-two .two-hide {
+  position: absolute;
+  top: 126px;
+  left: 0;
   display: none;
+}
+
+#section .section-two .anli {
+  width: 1190px;
+  height: 86px;
+  margin: 0 auto;
+}
+
+#section .section-two .two-pic {
+  width: 1190px;
+  height: 392px;
+  margin: 0 auto;
+}
+
+#section .section-two .two-pic img {
+  float: left;
+}
+
+#section .section-two .two-pic .pic-show {
+  float: left;
+  width: 220px;
+  height: 185px;
+  margin: 0 5px 10px 15px;
+}
+
+#section .section-two .two-pic .pic-show img {
+  width: 220px;
+  height: 155px;
+}
+
+#section .section-two .two-pic .pic-show p {
+  display: none;
+  width: 220px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #555;
+}
+
+#section .section-two .two-pic .pic-show:hover p {
+  display: block;
+}
+
+#section .section-two .service {
+  width: 1190px;
+  height: 954px;
+  margin: 0 auto;
+}
+
+#section .section-two .service .service-left {
+  float: left;
+  width: 808px;
+  height: 800px;
+  background-color: #f9f9f9;
+}
+
+#section .section-two .service .service-left img {
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+#section .section-two .service .service-left ul li {
+  float: left;
+  width: 182px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  margin: 15px 10px;
+  background-color: #f60;
+  color: #fff;
+}
+
+#section .section-two .service .service-left ul li:hover {
+  background-color: #ff8000;
+}
+
+#section .section-two .service .service-right {
+  float: left;
+  width: 355px;
+  height: 800px;
+  margin-left: 20px;
+}
+
+#section .section-two .service .service-right .top {
+  width: 355px;
+  height: 405px;
+  background-color: #f6f6f6;
+}
+
+#section .section-two .service .service-right .top h3 {
+  width: 325px;
+  height: 25px;
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  color: #404144;
+  line-height: 38px;
+}
+
+#section .section-two .service .service-right .top h3 a {
+  color: #f60;
+  font-size: 14px;
+  padding-left: 15px;
+}
+
+#section .section-two .service .service-right .top ul li {
+  width: 355px;
+  color: #666;
+  font-size: 12px;
+  line-height: 30px;
+  margin: 5px 0;
+}
+
+#section .section-two .service .service-right .top ul li span {
+  float: left;
+  padding: 0 5px;
+  color: #ff6700;
+  font-size: 20px;
+}
+
+#section .section-two .service .service-right .top ul li em {
+  float: right;
+  margin-right: 20px;
+  color: #ff6700;
+  font-size: 14px;
+}
+
+#section .section-two .service .service-right .bottom {
+  margin-top: 20px;
+  width: 355px;
+  height: 405px;
+  background-color: #f6f6f6;
+}
+
+#section .section-two .service .service-right .bottom h3 {
+  width: 325px;
+  height: 25px;
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  color: #404144;
+  line-height: 38px;
+}
+
+#section .section-two .service .service-right .bottom ul li {
+  width: 355px;
+  color: #666;
+  font-size: 12px;
+  line-height: 30px;
+  margin: 5px 0;
+}
+
+#section .section-two .service .service-right .bottom ul li a {
+  float: left;
+  padding-left: 20px;
+  color: #666;
+  font-size: 12px;
+}
+
+#section .section-two .service .service-right .bottom ul li span {
+  float: left;
 }

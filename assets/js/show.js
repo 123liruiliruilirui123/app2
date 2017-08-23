@@ -24,9 +24,10 @@ $(function() {
         $('.wrap em').css('display', 'none');
     })
     //官方套餐选项卡
-    $('.two-list list').click(function() {
+    $('.two-title .list').click(function() {
         $('.two-content').hide();
         var index = $(this).index();
         $('.two-content').eq(index).show();
     })
+
 })

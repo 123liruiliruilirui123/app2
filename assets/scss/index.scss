@@ -328,10 +328,14 @@ ul {
                 background-repeat: no-repeat;
                 background-size: auto;
                 .main-wrap {
+                    position: relative;
                     overflow: hidden;
                     width: 469px;
                     height: 283px; //第一个轮播图，放大
                     ul {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
                         width: 9999px;
                         li {
                             float: left;
@@ -892,6 +896,9 @@ ul {
             height: 676px;
             margin: 0 auto;
             .lunbo-body {
+                position: absolute;
+                top: 0;
+                left: 0;
                 width: 4000px;
                 &>li {
                     float: left;

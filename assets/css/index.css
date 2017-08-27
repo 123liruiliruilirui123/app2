@@ -99,12 +99,16 @@ ul {
 }
 
 #header .header-main .lunbowrap .header-main-left .main-wrap {
+  position: relative;
   overflow: hidden;
   width: 469px;
   height: 283px;
 }
 
 #header .header-main .lunbowrap .header-main-left .main-wrap ul {
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 9999px;
 }
 
@@ -1020,6 +1024,9 @@ ul {
 }
 
 #section .section-programe .lunbo .lunbo-body {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 4000px;
 }
 

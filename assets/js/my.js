@@ -1,4 +1,5 @@
 $(function() {
+    //底部进度条
     $('.pub-dialog .pub-x').click(function() {
         $('.open').animate({
             left: '-432px'

@@ -18,8 +18,8 @@
             <a href="#" class="logo"><img src="assets/images/logo1.png"></a>
             <h1>新用户注册</h1>
             <a href="#" class="logo1">
-            	<img src="assets/images/duanxin.jpg" width="18" height="18">
-            	<span>"注册页面" 意见反馈</span>
+                <img src="assets/images/duanxin.jpg" width="18" height="18">
+                <span>"注册页面" 意见反馈</span>
             </a>
         </div>
         <div id="section">
@@ -29,15 +29,15 @@
                 </div>
                 <div class="login-name">
                     <img src="assets/images/name.png">
-                    <input type="text" name="" placeholder="输入6位状态码">
+                    <input type="text" name="" placeholder="输入手机号码" datatype="m" errormsg="请输入手机号码">
                 </div>
                 <div class="login-pass">
                     <img src="assets/images/pass.png">
-                    <input type="text" name="" placeholder="密码">
+                    <input type="text" name="" placeholder="密码" datatype="p" errormsg="密码是6位数字">
                 </div>
                 <div class="login-mima">
                     <img src="assets/images/name.png">
-                    <input type="text" name="" placeholder="密码(6-16位字母/数字/符号)">
+                    <input type="text" name="" placeholder="请再次输入密码" reck: "两次输入的内容不一致！">
                 </div>
                 <div class="login-xuan">
                     <em></em>
@@ -78,6 +78,17 @@
             </div>
         </div>
     </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/Validform_v5.3.2_min.js"></script>
+    <script>
+    $(".form").Validform({
+        tiptype: 3,
+        datatype: {
+            "m": /^13[0-9]{9}$|14[0-9]{9}|15[0-9]{9}$|18[0-9]{9}$/,
+            "p": /^[0-9]{6}$/,
+        }
+    });
+    </script>
 </body>
 
 </html>
